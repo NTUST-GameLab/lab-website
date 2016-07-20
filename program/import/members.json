@@ -1,0 +1,104 @@
+{
+	"faculty": [
+		{
+			"name":      "戴文凱",
+			"jobtitle":  "教授",
+			"mail":      "wenkaitai@gmail.com",
+			"tel":       "02-2730-1080",
+			"thumbnail": "https://graph.facebook.com/100002282774811/picture?width=200&height=200",
+			"website":   "http://faculty.csie.ntust.edu.tw/~wktai/",
+			"domain":    ["Computer Graphics", "Game Development and Interactive Techniques", "Game Engine", " Web-based Information System"]
+		}
+	],
+	"graduate": [
+		{
+			"studentId": "",
+			"name":      "李建緯",
+			"since":     "2015-09",
+			"mail":      "@mail.ntust.edu.tw",
+			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200",
+			"website":   "http://msn.com",
+			"facebook":  "http://msn.com"
+		},
+		{
+			"studentId": "",
+			"name":      "鍾宇哲",
+			"since":     "2015-12",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "古廸耀",
+			"since":     "2015-09",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200"
+		},
+		{
+			"studentId": "M104150",
+			"name":      "趙柏勛",
+			"since":     "2015-09",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100000498912366/picture?width=200&height=200"
+		},
+		{
+			"studentId": "M104150",
+			"name":      "宋承翰",
+			"since":     "2015-09",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100002239913248/picture?width=200&height=200"
+		},
+		{
+			"studentId": "M104150",
+			"name":      "張伊姍",
+			"since":     "2015-09",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100000129143964/picture?width=200&height=200"
+		},
+		{
+			"studentId": "M10415096",
+			"name":      "王澤浩",
+			"since":     "2016-02",
+			"mail":      "salmon.zh.tw@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000402759103/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "Ardiawan Bagus Harisa",
+			"since":     "2016-02",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "鄒濬安",
+			"since":     "2016-02",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100000446074157/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "李允斌",
+			"since":     "2016-06",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100000375378853/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "林廣柏",
+			"since":     "2016-06",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/100001000781662/picture?width=200&height=200"
+		},
+		{
+			"studentId": "",
+			"name":      "陳品陵",
+			"since":     "2016-06",
+			"mail":      "temp@mail.com",
+			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200"
+		}
+	],
+	"ungraduate": [
+
+	]
+}

@@ -1,0 +1,137 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		// Title.
+		title #{infomation.title}
+		// Mobile setting.
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		// jQeury.
+		script(src='public/jquery/jquery-3.0.0.min.js')
+		// Reset CSS.
+		link(rel='stylesheet', href='public/reset.css')
+		// Default CSS.
+		link(rel='stylesheet', href='public/style.css')
+		// Font awesome CSS.
+		link(rel='stylesheet', href='public/font-awesome-4.6.0/css/font-awesome.min.css')
+		// Google Fonts.
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Armata')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pontano+Sans')
+
+	body
+		// Nav menu.
+		nav.menu
+			ul
+				li
+					a(href='#', onclick='return false;', data-link='#about-us') About
+				li
+					a(href='#', onclick='return false;', data-link='#faculty') Faculty
+				li
+					a(href='#', onclick='return false;', data-link='#members') Members
+				li
+					a(href='#', onclick='return false;', data-link='#map') Contact
+		div.nav-padding
+
+		// Content.
+		div.main-content
+			// About us.
+			section#about-us
+				h2.title
+					| About GAME Lab
+				p
+					| #{infomation.introduction}
+
+			//- // Projects.
+			//- section#projects
+			//- 	h2.title
+			//- 		| Projects
+
+			// Faculty.
+			section#faculty
+				h2.title
+					| Faculty
+				each member in members.faculty
+					include ./components/faculty.jade
+
+			// Members.
+			section#members
+				// Current members
+				h2.title
+					| Members
+				if members.graduate && members.graduate.length
+					div#graduate-members.members
+						each member in members.graduate
+							include ./components/member.jade
+				if members.ungraduate && members.ungraduate.length
+					div#ungraduate-members.members
+						each member in members.ungraduate
+							include ./components/member.jade
+
+				// Alumni
+				h2.title
+					| Alumni
+				if members.alumni && members.alumni.length
+					div#alumni-members.members
+						each member in members.alumni
+							include ./components/member.jade
+
+			// Map.
+			section#map
+				h2.title
+					| Contact Information
+				div.google-maps
+					div(class='overlay' onClick="style.pointerEvents='none'")
+					iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.8098890308815!2d121.5407542774933!3d25.01303265900808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x90db5e44ee29f455!2sNational+Taiwan+University+of+Science+and+Technology!5e0!3m2!1sen!2s!4v1461339363621" frameborder='0' allowfullscreen)
+				div.information
+					div.div-table
+						div.div-tr.school
+							div.div-td
+							div.div-td
+								p
+									| #{infomation.contact.school}
+								p.sub
+									| #{infomation.contact.department}
+						div.div-tr.address
+							div.div-td
+								i.fa.fa-map-marker
+							div.div-td
+								| #{infomation.contact.address}
+								span.room
+									| #{infomation.contact.room}
+						div.div-tr.telephone
+							div.div-td
+								i.fa.fa-phone
+							div.div-td
+								| #{infomation.contact.telephone}
+
+		// Footer.
+		include ./components/footer.jade
+
+		// JavaScript
+		script.
+			// Nav menu - scroll animate.
+			$('nav.menu ul a').on('click', function (e) {
+				// Add 'active' class.
+				var $element = $(this);
+				// $element.parents('ul').find('a.active').removeClass('active');
+				// $element.addClass('active');
+				// Scroll with the same speed.
+				var $dest  = $($element.data('link'));
+				var destY  = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();
+				var during = Math.abs((window.pageYOffset || document.documentElement.scrollTop) - destY) * 0.75;
+				$('html, body').animate({ scrollTop: destY + 1 }, during);
+			});
+			//
+			$(window).on('scroll', function (e) {
+				var cursorPos = $(this).scrollTop();
+				$('nav.menu ul a').each(function () {
+					var $item  = $(this);
+					var $dest  = $($item.data('link'));
+					var top    = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();
+					var bottom = top + $dest.outerHeight();
+					if (cursorPos >= top && cursorPos <= bottom) {
+						$item.parents('ul').find('a.active').removeClass('active');
+						$item.addClass('active');
+					}
+				});
+			});

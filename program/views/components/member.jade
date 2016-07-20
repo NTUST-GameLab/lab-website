@@ -1,0 +1,23 @@
+div.member
+	div.member-infos
+		div.name
+			| #{member.name}
+		div.since
+			| #{member.since}
+		if (member.mail != undefined)
+			div.email
+				i.label.fa.fa-paper-plane-o
+				div.hidden-scrollar
+					div.text
+						| #{member.mail[0]} 
+						i.fa.fa-at
+						|  #{member.mail[1]}
+		div.social
+			if (member.website != undefined)
+				div.website
+					i.fa.fa-home
+			if (member.facebook != undefined)
+				div.facebook
+					i.fa.fa-facebook
+	div.member-thumbnail
+		img(src=member.thumbnail)

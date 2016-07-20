@@ -1,0 +1,23 @@
+div.faculty
+	div.faculty-infos
+		div.name
+			| #{member.name}
+			span.jobtitle
+				| #{member.jobtitle}
+		div.email
+			i.label.fa.fa-paper-plane-o
+			div.hidden-scrollar
+				div.text
+					//- | #{member.mail[0]}
+					//- i.fa.fa-at
+					//- | #{member.mail[1]}
+					| #{member.mail}
+		div.social
+			if (member.website != undefined)
+				div.website
+					i.fa.fa-home
+			if (member.facebook != undefined)
+				div.facebook
+					i.fa.fa-facebook
+	div.faculty-thumbnail
+		img(src=member.thumbnail)
