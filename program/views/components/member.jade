@@ -20,4 +20,4 @@ div.member
 				div.facebook
 					i.fa.fa-facebook
 	div.member-thumbnail
-		img(src=member.thumbnail)
+		img(src=member.thumbnail, onerror="$(this).attr('src', './public/images/default-thumbnail.png')")
