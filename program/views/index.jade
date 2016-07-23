@@ -54,7 +54,7 @@ html
 			// About us.
 			section#about-us
 				h2.title
-					| About GAME Lab
+					| About GAME&nbsp;Lab
 				p
 					| #{infomation.introduction}
 
@@ -136,14 +136,15 @@ html
 		// Footer.
 		include ./components/footer.jade
 
-		// JavaScript
+		// Google Analytics.
+		include ./components/ga.js
+
+		// JavaScript inline.
 		script.
 			// Nav menu - scroll animate.
 			$('nav.menu ul a').on('click', function (e) {
 				// Add 'active' class.
 				var $element = $(this);
-				// $element.parents('ul').find('a.active').removeClass('active');
-				// $element.addClass('active');
 				// Scroll with the same speed.
 				var $dest  = $($element.data('link'));
 				var destY  = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();

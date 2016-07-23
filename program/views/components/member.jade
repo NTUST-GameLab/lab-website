@@ -9,7 +9,8 @@ div.member
 			| #{member.name}
 		div.domain
 			if (member.domains)
-				p.label Research Area:
+				p.label
+					| Research Area:
 				ul
 					each domain in member.domains
 						li #{domain}
