@@ -35,7 +35,9 @@ data.members    = require(importPath + 'members.json');
 data.infomation = require(importPath + 'info.json');
 
 // Hide the '@' in email information.
-data.members.graduate.map(function (member) {
+data.members.faculty.map(emailExtractor);
+data.members.graduate.map(emailExtractor);
+function emailExtractor(member) {
 	if (member.mail) {
 		var regRes = member.mail.match(/(.+)@(.+)/);
 		if (regRes && regRes.length >= 3) {
@@ -43,7 +45,7 @@ data.members.graduate.map(function (member) {
 		}
 	}
 	delete member.mail;
-});
+}
 
 // Render the index page.
 options = {};

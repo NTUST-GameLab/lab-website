@@ -6,6 +6,22 @@ html
 		title #{infomation.title}
 		// Mobile setting.
 		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		// Metadata for Google.
+		meta(name='description' content='#{infomation.introduction}')
+		meta(name='keywords' content='NTUST,GAMELab')
+		meta(name='author' content='GAMELab')
+		meta(name='copyright' content='GAMELab')
+		// Metadata for Facebook.
+		meta(property='og:title' content='#{infomation.title}')
+		meta(property='og:type' content='website')
+		meta(property='og:image' content='https://graph.facebook.com/100002282774811/picture?width=200&height=200')
+		meta(property='og:url' content='http://gamelab.csie.ntust.edu.tw/')
+		meta(property='og:description' content='#{infomation.introduction}')
+		// Metadata for Twitter.
+		meta(name='twitter:card' content='summary')
+		meta(name='twitter:title' content='#{infomation.title}')
+		meta(name='twitter:description' content='#{infomation.introduction}')
+		meta(name='twitter:image' content='')
 		// jQeury.
 		script(src='public/jquery/jquery-3.0.0.min.js')
 		// Reset CSS.
@@ -17,6 +33,7 @@ html
 		// Google Fonts.
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Armata')
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pontano+Sans')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,300')
 
 	body
 		// Nav menu.
@@ -50,8 +67,9 @@ html
 			section#faculty
 				h2.title
 					| Faculty
-				each member in members.faculty
-					include ./components/faculty.jade
+				div#faculty-members.members
+					each member in members.faculty
+						include ./components/member.jade
 
 			// Members.
 			section#members
@@ -74,6 +92,15 @@ html
 					div#alumni-members.members
 						each member in members.alumni
 							include ./components/member.jade
+
+				script.
+					function toggleNextPage(element, switcher) {
+						if (switcher === 'open') {
+							$(element).parent().addClass('active');
+						} else {
+							$(element).parent().removeClass('active');
+						}
+					}
 
 			// Map.
 			section#map

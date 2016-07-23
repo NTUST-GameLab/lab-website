@@ -1,23 +1,50 @@
 div.member
-	div.member-infos
-		div.name
-			| #{member.name}
-		div.since
-			| #{member.since}
-		if (member.mail != undefined)
-			div.email
-				i.label.fa.fa-paper-plane-o
-				div.hidden-scrollar
-					div.text
-						| #{member.mail[0]} 
-						i.fa.fa-at
-						|  #{member.mail[1]}
-		div.social
-			if (member.website != undefined)
-				div.website
-					i.fa.fa-home
-			if (member.facebook != undefined)
-				div.facebook
-					i.fa.fa-facebook
-	div.member-thumbnail
+	div.header
+		p.title
+			| #{member.title}
+	div.thumbnail
 		img(src=member.thumbnail, onerror="$(this).attr('src', './public/images/default-thumbnail.png')")
+	div.content
+		p.name
+			| #{member.name}
+		div.domain
+			if (member.domains)
+				p.label Research Area:
+				ul
+					each domain in member.domains
+						li #{domain}
+	a.second-page(onclick="toggleNextPage(this, 'open')")
+		i.fa.fa-plus
+	a.second-page-close(onclick="toggleNextPage(this, 'close')")
+		i.fa.fa-close
+	div.contact
+		if (member.mail !== undefined)
+			p.label
+				| Email
+			p.email
+				| #{member.mail[0]}&nbsp;
+				i.fa.fa-at
+				| &nbsp;#{member.mail[1]}
+		if (member.socials !== undefined)
+			p.label
+				| Socials
+			ul.socials
+				if (member.socials.facebook !== undefined)
+					a(href=member.socials.facebook, target='_blank')
+						li.facebook
+							i.fa.fa-facebook
+				if (member.socials.google !== undefined)
+					a(href=member.socials.google, target='_blank')
+						li.google
+							i.fa.fa-google-plus
+				if (member.socials.twitter !== undefined)
+					a(href=member.socials.twitter, target='_blank')
+						li.twitter
+							i.fa.fa-twitter
+				if (member.socials.website !== undefined)
+					a(href=member.socials.website, target='_blank')
+						li.website
+							i.fa.fa-link
+	if (member.since !== undefined)
+		div.since
+			p Since #{member.since}
