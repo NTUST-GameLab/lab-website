@@ -1,5 +1,7 @@
 This is the website generator for NTUST GAME Lab.
 
+This project has finish layout, like **JavaScript**, **CSS**. You just need to modify the `json data` to re-render the HTML to be your website for workspace.
+
 Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 
 ---
