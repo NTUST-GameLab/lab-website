@@ -336,6 +336,14 @@ nav.menu li {
 	        transition: all 500ms ease, background 100ms ease;
 }
 
+.member .second-page i {
+	-webkit-animation: fadeInFromNone 2000ms;
+	   -moz-animation: fadeInFromNone 2000ms;
+	    -ms-animation: fadeInFromNone 2000ms;
+	     -o-animation: fadeInFromNone 2000ms;
+	        animation: fadeInFromNone 2000ms;
+}
+
 .member.active .second-page i {
 	display: none;
 }

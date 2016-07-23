@@ -14,7 +14,7 @@
 		{
 			"studentId": "",
 			"name":      "李建緯",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2015-09",
 			"mail":      "@mail.ntust.edu.tw",
 			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200"
@@ -22,7 +22,7 @@
 		{
 			"studentId": "",
 			"name":      "鍾宇哲",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2015-12",
 			"mail":      "firzen10459@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
@@ -31,7 +31,7 @@
 		{
 			"studentId": "",
 			"name":      "古廸耀",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2014-06",
 			"mail":      "anedzyl@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200",
@@ -43,7 +43,7 @@
 		{
 			"studentId": "M104150",
 			"name":      "趙柏勛",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2015-07",
 			"mail":      "tony123966@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000498912366/picture?width=200&height=200",
@@ -55,7 +55,7 @@
 		{
 			"studentId": "M104150",
 			"name":      "宋承翰",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2015-07",
 			"mail":      "ChangHanSongs@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100002239913248/picture?width=200&height=200",
@@ -64,7 +64,7 @@
 		{
 			"studentId": "M104150",
 			"name":      "張伊姍",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2015-07",
 			"mail":      "fallinlove0811@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000129143964/picture?width=200&height=200"
@@ -72,22 +72,19 @@
 		{
 			"studentId": "M10415096",
 			"name":      "王澤浩",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-02",
 			"mail":      "salmon.zh.tw@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000402759103/picture?width=200&height=200",
 			"domains":   ["Full-Stack Development", "Data Mining"],
 			"socials":   {
-				"facebook": "#",
-				"google": "#",
-				"twitter": "#",
-				"website": "#"
+				"website": "http://salmon.tw"
 			}
 		},
 		{
 			"studentId": "",
 			"name":      "Ardiawan Bagus Harisa",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-02",
 			"mail":      "temp@mail.com",
 			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200"
@@ -95,7 +92,7 @@
 		{
 			"studentId": "",
 			"name":      "鄒濬安",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-02",
 			"mail":      "temp@mail.com",
 			"thumbnail": "https://graph.facebook.com/100000446074157/picture?width=200&height=200"
@@ -103,7 +100,7 @@
 		{
 			"studentId": "",
 			"name":      "李允斌",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-06",
 			"mail":      "nosneb83@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000375378853/picture?width=200&height=200",
@@ -115,7 +112,7 @@
 		{
 			"studentId": "",
 			"name":      "林廣柏",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-06",
 			"mail":      "npes89033@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100001000781662/picture?width=200&height=200",
@@ -124,7 +121,7 @@
 		{
 			"studentId": "",
 			"name":      "陳品陵",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-07",
 			"mail":      "ally53628@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200",
@@ -133,11 +130,26 @@
 		{
 			"studentId": "",
 			"name":      "丁奕豪",
-			"title":     "Master degree",
+			"title":     "Master's degree",
 			"since":     "2016-07",
 			"mail":      "den2092@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000115218367/picture?width=200&height=200",
 			"domains":   ["Embedded Systems", "Image Processing"]
+		},
+		{
+			"studentId": "",
+			"name":      "Dummy",
+			"title":     "Master's degree",
+			"since":     "2016-02",
+			"mail":      "salmon.zh.tw@gmail.com",
+			"thumbnail": "./",
+			"domains":   ["Play games", "Swimming"],
+			"socials":   {
+				"facebook": "#",
+				"google": "#",
+				"twitter": "#",
+				"website": "#"
+			}
 		}
 	],
 	"ungraduate": [

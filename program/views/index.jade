@@ -95,6 +95,8 @@ html
 
 				script.
 					function toggleNextPage(element, switcher) {
+						// Reset all actived.
+						$('.active.member').removeClass('active');
 						if (switcher === 'open') {
 							$(element).parent().addClass('active');
 						} else {
