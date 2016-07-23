@@ -37,7 +37,7 @@ html
 
 	body
 		// Nav menu.
-		nav.menu
+		nav.menu.unselectable
 			ul
 				li
 					a(href='#', onclick='return false;', data-link='#about-us') About
@@ -53,7 +53,7 @@ html
 		div.main-content
 			// About us.
 			section#about-us
-				h2.title
+				h2.title.unselectable
 					| About GAME&nbsp;Lab
 				p
 					| #{infomation.introduction}
@@ -65,7 +65,7 @@ html
 
 			// Faculty.
 			section#faculty
-				h2.title
+				h2.title.unselectable
 					| Faculty
 				div#faculty-members.members
 					each member in members.faculty
@@ -74,7 +74,7 @@ html
 			// Members.
 			section#members
 				// Current members
-				h2.title
+				h2.title.unselectable
 					| Members
 				if members.graduate && members.graduate.length
 					div#graduate-members.members
@@ -86,9 +86,9 @@ html
 							include ./components/member.jade
 
 				// Alumni
-				h2.title
-					| Alumni
 				if members.alumni && members.alumni.length
+					h2.title
+						| Alumni
 					div#alumni-members.members
 						each member in members.alumni
 							include ./components/member.jade
@@ -106,7 +106,7 @@ html
 
 			// Map.
 			section#map
-				h2.title
+				h2.title.unselectable
 					| Contact Information
 				div.google-maps
 					div(class='overlay' onClick="style.pointerEvents='none'")
@@ -164,4 +164,8 @@ html
 						$item.addClass('active');
 					}
 				});
+			});
+			// Disable all image drag event.
+			$('img').on('dragstart', function (event) {
+				event.preventDefault();
 			});

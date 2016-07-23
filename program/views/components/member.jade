@@ -1,5 +1,5 @@
 div.member
-	div.header
+	div.header.unselectable
 		p.title
 			| #{member.title}
 	div.thumbnail
@@ -9,7 +9,7 @@ div.member
 			| #{member.name}
 		div.domain
 			if (member.domains)
-				p.label
+				p.label.unselectable
 					| Research Area:
 				ul
 					each domain in member.domains
@@ -20,14 +20,14 @@ div.member
 		i.fa.fa-close
 	div.contact
 		if (member.mail !== undefined)
-			p.label
+			p.label.unselectable
 				| Email
 			p.email
 				| #{member.mail[0]}&nbsp;
 				i.fa.fa-at
 				| &nbsp;#{member.mail[1]}
 		if (member.socials !== undefined)
-			p.label
+			p.label.unselectable
 				| Socials
 			ul.socials
 				if (member.socials.facebook !== undefined)
@@ -47,5 +47,5 @@ div.member
 						li.website
 							i.fa.fa-link
 	if (member.since !== undefined)
-		div.since
+		div.since.unselectable
 			p Since #{member.since}
