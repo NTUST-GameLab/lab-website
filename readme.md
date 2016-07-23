@@ -144,3 +144,11 @@ Any optionals info that you wanna ingore. You can delete the pair of social obje
 	}
 }
 ```
+
+## Social metadata
+
+Please find `./program/views/index.jade` and fix it in `<head>` tag.
+
+## Google Analytics
+
+If you want to use your `ga.js`, please find `./program/views/components/ga.js` and fix it. If you want to stop it, please clean the text in file.

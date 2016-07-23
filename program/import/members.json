@@ -135,24 +135,12 @@
 			"mail":      "den2092@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000115218367/picture?width=200&height=200",
 			"domains":   ["Embedded Systems", "Image Processing"]
-		},
-		{
-			"studentId": "",
-			"name":      "Dummy",
-			"title":     "Master's degree",
-			"since":     "2016-02",
-			"mail":      "salmon.zh.tw@gmail.com",
-			"thumbnail": "./",
-			"domains":   ["Singing", "Swimming"],
-			"socials":   {
-				"facebook": "#",
-				"google": "#",
-				"twitter": "#",
-				"website": "#"
-			}
 		}
 	],
 	"ungraduate": [
+
+	],
+	"alumni": [
 
 	]
 }
