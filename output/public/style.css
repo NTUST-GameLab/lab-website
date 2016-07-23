@@ -178,6 +178,11 @@ nav.menu li {
 	font-size: 1.35em;
 }
 
+#faculty .member .content .domain {
+	width: 420px;
+	height: 150px;
+}
+
 #faculty .member.active .second-page {
 	-webkit-transform: scale(30);
 	   -moz-transform: scale(30);
@@ -199,6 +204,11 @@ nav.menu li {
 
 	#faculty .member .content .name {
 		font-size: 1.25em;
+	}
+
+	#faculty .member .content .domain {
+		width: 220px;
+		height: 150px;
 	}
 }
 
@@ -276,10 +286,14 @@ nav.menu li {
 }
 
 .member .content .domain {
+	position: absolute;
+	width: 220px;
+	height: 70px;
 	color: #666;
 	line-height: 1.25em;
 	text-align: left;
 	padding: 0 12px;
+	overflow: hidden;
 }
 
 .member .content .domain .label {
