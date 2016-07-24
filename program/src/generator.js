@@ -15,10 +15,11 @@
 
 */
 
-var fs   = require('fs');
-var ncp  = require('ncp');
-var rmrf = require('rimraf');
-var jade = require('jade');
+var fs         = require('fs');
+var ncp        = require('ncp');
+var rmrf       = require('rimraf');
+var jade       = require('jade');
+var fontSpider = require('font-spider');
 
 // Paths setting.
 var viewsPath  = __dirname + '/../views/';
@@ -63,5 +64,23 @@ rmrf(outputPath, {}, function (err) {
 	fs.writeFileSync(outputPath + 'index.html', indexHTML);
 	// Clone the public folder.
 	fs.mkdirSync(outputPath + 'public');
-	ncp(publicPath, outputPath + 'public', function (err) { });
+	ncp(publicPath, outputPath + 'public', function (err) {
+		// Then, minimize the font via font-spider.
+		// p.s. This package not suppot '.oft', please transfer them first. (Maybe you can choose 'fontforge')
+		fontSpider.spider([__dirname + '/../../output/index.html'], {
+			// Ignore Google fonts APIs.
+			ignore: ['Armata', 'Pontano', 'Roboto'],
+			unique: true,
+			backup: false,
+			silent: true
+		}).then(function (webFonts) {
+			return fontSpider.compressor(webFonts, {
+				backup: false
+			});
+		}).then(function (webFonts) {
+			// console.log(webFonts);
+		}).catch(function (errors) {
+			console.error(errors);
+		});
+	});
 });

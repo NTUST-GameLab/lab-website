@@ -5,7 +5,7 @@ div.member
 	div.thumbnail
 		img(src=member.thumbnail, onerror="$(this).attr('src', './public/images/default-thumbnail.png')")
 	div.content
-		p.name
+		p.name.forceFont
 			| #{member.name}
 		div.domain
 			if (member.domains)

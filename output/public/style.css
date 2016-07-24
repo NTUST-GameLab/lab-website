@@ -1,7 +1,20 @@
+/* Fonts will be minimized by font-spider */
+
+@font-face {
+	font-family: "wt006";
+	src: url(./fonts/wt006.ttf);
+}
+
+/* Global */
+
 html, body {
 	height: 100%;
 	margin: 0px;
 	background: #FFFFFF;
+}
+
+.forceFont {
+	font-family: 'Roboto', 'wt006' !important;
 }
 
 img, .unselectable {
