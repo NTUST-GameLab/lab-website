@@ -51,6 +51,11 @@ html
 
 		// Content.
 		div.main-content
+			// Photo album.
+			section#photo-album
+				div.photo
+				div.mask
+
 			// About us.
 			section#about-us
 				h2.title.unselectable
@@ -169,3 +174,7 @@ html
 			$('img').on('dragstart', function (event) {
 				event.preventDefault();
 			});
+			// Random image cover.
+			var maxNum = 3;
+			var num = Math.floor((Math.random() * maxNum) + 1);
+			$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg');

@@ -7,7 +7,10 @@
 			"tel":       "02-2730-1080",
 			"thumbnail": "https://graph.facebook.com/100002282774811/picture?width=200&height=200",
 			"website":   "http://faculty.csie.ntust.edu.tw/~wktai/",
-			"domains":   ["Computer Graphics", "Game Development and Interactive Techniques", "Game Engine", " Web-based Information System"]
+			"domains":   ["Computer Graphics", "Game Development and Interactive Techniques", "Game Engine", " Web-based Information System"],
+			"socials":   {
+				"website": "http://faculty.csie.ntust.edu.tw/~wktai/"
+			}
 		}
 	],
 	"graduate": [
@@ -135,6 +138,15 @@
 			"mail":      "ally53628@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200",
 			"domains":   ["Computer Graphics"]
+		},
+		{
+			"studentId": "",
+			"name":      "楊羽農",
+			"title":     "Master's degree",
+			"since":     "2015-07",
+			"mail":      "yang810134@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002016524382/picture?width=200&height=200",
+			"domains":   ["Signal Processing"]
 		},
 		{
 			"studentId": "",
