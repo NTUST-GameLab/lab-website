@@ -69,7 +69,7 @@ rmrf(outputPath, {}, function (err) {
 		// p.s. This package not suppot '.oft', please transfer them first. (Maybe you can choose 'fontforge')
 		fontSpider.spider([__dirname + '/../../output/index.html'], {
 			// Ignore Google fonts APIs.
-			ignore: ['Armata', 'Pontano', 'Roboto'],
+			ignore: ['Armata', 'Pontano', 'Roboto', 'ABeeZee'],
 			unique: true,
 			backup: false,
 			silent: true
