@@ -15,7 +15,8 @@ Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 
 * jade v1.11.0 (has renamed to **pug**)
 * ncp v2.0.0
-* rimraf v2.5.2
+* rimraf v2.5.4
+* font-spider 1.3.1
 
 
 ## Steps

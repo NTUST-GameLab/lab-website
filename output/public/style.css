@@ -1,8 +1,27 @@
 /* Fonts will be minimized by font-spider */
 
 @font-face {
-	font-family: "wt006";
-	src: url(./fonts/wt006.ttf);
+	font-family: "NotoSans";
+	font-weight: 300;
+	src: url(./fonts/KaiGenGothicTC-Light.ttf);
+}
+
+@font-face {
+	font-family: "NotoSans";
+	font-weight: 400;
+	src: url(./fonts/KaiGenGothicTC-Regular.ttf);
+}
+
+@font-face {
+	font-family: "NotoSans";
+	font-weight: 500;
+	src: url(./fonts/KaiGenGothicTC-Medium.ttf);
+}
+
+@font-face {
+	font-family: "NotoSans";
+	font-weight: 700;
+	src: url(./fonts/KaiGenGothicTC-Bold.ttf);
 }
 
 /* Global */
@@ -14,7 +33,7 @@ html, body {
 }
 
 .forceFont {
-	font-family: 'Roboto', 'wt006' !important;
+	font-family: 'NotoSans', 'Roboto' !important;
 }
 
 img, .unselectable {

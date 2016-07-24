@@ -65,7 +65,7 @@ rmrf(outputPath, {}, function (err) {
 	// Clone the public folder.
 	fs.mkdirSync(outputPath + 'public');
 	ncp(publicPath, outputPath + 'public', function (err) {
-		// Then, minimize the font via font-spider.
+		// Then, minimize the font via font-spider (Dynamic subsetting).
 		// p.s. This package not suppot '.oft', please transfer them first. (Maybe you can choose 'fontforge')
 		fontSpider.spider([__dirname + '/../../output/index.html'], {
 			// Ignore Google fonts APIs.
