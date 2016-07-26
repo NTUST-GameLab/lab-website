@@ -26,7 +26,7 @@ $('nav.menu ul a').on('click', function (e) {
 	var during = Math.abs((window.pageYOffset || document.documentElement.scrollTop) - destY) * 0.75;
 	$('html, body').animate({ scrollTop: destY + 1 }, during);
 });
-//
+// Navigation animation when scroll event.
 $(window).on('scroll', function (e) {
 	var cursorPos = $(this).scrollTop();
 	$('nav.menu ul a').each(function () {
@@ -47,4 +47,4 @@ $('img').on('dragstart', function (event) {
 // Random image cover.
 var maxNum = 3;
 var num = Math.floor((Math.random() * maxNum) + 1);
-$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg');</script></body></html>
+$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg)');</script></body></html>
