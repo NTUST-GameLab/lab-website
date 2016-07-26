@@ -3,27 +3,27 @@ html
 	head
 		meta(charset='UTF-8')
 		// Title.
-		title #{infomation.title}
+		title #{information.title}
 		// Shortcut icon.
 		link(rel='shortcut icon' href='./public/images/logo.png')
 		// Mobile setting.
 		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		// Metadata for Google.
-		meta(name='description' content='#{infomation.introduction}')
+		meta(name='description' content='#{information.introduction}')
 		meta(name='keywords' content='NTUST,GAMELab')
 		meta(name='author' content='GAMELab')
 		meta(name='copyright' content='GAMELab')
 		// Metadata for Facebook.
-		meta(property='og:title' content='#{infomation.title}')
+		meta(property='og:title' content='#{information.title}')
 		meta(property='og:type' content='website')
 		meta(property='og:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		meta(property='og:url' content='http://gamelab.csie.ntust.edu.tw/')
-		meta(property='og:description' content='#{infomation.introduction}')
+		meta(property='og:description' content='#{information.introduction}')
 		// Metadata for Twitter.
 		meta(name='twitter:card' content='summary')
-		meta(name='twitter:title' content='#{infomation.title}')
-		meta(name='twitter:description' content='#{infomation.introduction}')
-		meta(name='twitter:image' content='')
+		meta(name='twitter:title' content='#{information.title}')
+		meta(name='twitter:description' content='#{information.introduction}')
+		meta(name='twitter:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		// jQeury.
 		script(src='./public/jquery/jquery-3.0.0.min.js')
 		// Reset CSS.
@@ -38,18 +38,32 @@ html
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,300')
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=ABeeZee')
 
-	body
+	body.en-lang-ctrl
 		// Nav menu.
 		nav.menu.unselectable
 			ul
 				li
-					a(href='#', onclick='return false;', data-link='#about-us') About
+					a(href='#', onclick='return false;', data-link='#about-us')
+						span.en-lang #{information.ui.nav_about.en}
+						span.tw-lang #{information.ui.nav_about.tw}
 				li
-					a(href='#', onclick='return false;', data-link='#faculty') Faculty
+					a(href='#', onclick='return false;', data-link='#faculty')
+						span.en-lang #{information.ui.nav_faculty.en}
+						span.tw-lang #{information.ui.nav_faculty.tw}
 				li
-					a(href='#', onclick='return false;', data-link='#members') Members
+					a(href='#', onclick='return false;', data-link='#members')
+						span.en-lang #{information.ui.nav_members.en}
+						span.tw-lang #{information.ui.nav_members.tw}
 				li
-					a(href='#', onclick='return false;', data-link='#map') Contact
+					a(href='#', onclick='return false;', data-link='#map')
+						span.en-lang #{information.ui.nav_contact.en}
+						span.tw-lang #{information.ui.nav_contact.tw}
+				li.language
+					a(href='#', onclick="$('body').removeClass().addClass('en-lang-ctrl'); return false;")
+						| #{information.ui.language.en}
+				li.language
+					a(href='#', onclick="$('body').removeClass().addClass('tw-lang-ctrl'); return false;")
+						| #{information.ui.language.tw}
 		div.nav-padding
 
 		// Content.
@@ -62,9 +76,11 @@ html
 			// About us.
 			section#about-us
 				h2.title.unselectable
-					| About GAME&nbsp;Lab
+					span.en-lang !{information.ui.sec_about.en}
+					span.tw-lang !{information.ui.sec_about.tw}
 				p
-					| #{infomation.introduction}
+					span.en-lang !{information.introduction.en}
+					span.tw-lang !{information.introduction.tw}
 
 			//- // Projects.
 			//- section#projects
@@ -74,7 +90,8 @@ html
 			// Faculty.
 			section#faculty
 				h2.title.unselectable
-					| Faculty
+					span.en-lang #{information.ui.sec_faculty.en}
+					span.tw-lang #{information.ui.sec_faculty.tw}
 				div#faculty-members.members
 					each member in members.faculty
 						include ./components/member.jade
@@ -83,7 +100,8 @@ html
 			section#members
 				// Current members
 				h2.title.unselectable
-					| Members
+					span.en-lang #{information.ui.sec_members.en}
+					span.tw-lang #{information.ui.sec_members.tw}
 				if members.graduate && members.graduate.length
 					div#graduate-members.members
 						each member in members.graduate
@@ -96,7 +114,8 @@ html
 				// Alumni
 				if members.alumni && members.alumni.length
 					h2.title
-						| Alumni
+						span.en-lang #{information.ui.sec_alumni.en}
+						span.tw-lang #{information.ui.sec_alumni.tw}
 					div#alumni-members.members
 						each member in members.alumni
 							include ./components/member.jade
@@ -115,7 +134,8 @@ html
 			// Map.
 			section#map
 				h2.title.unselectable
-					| Contact Information
+					span.en-lang #{information.ui.sec_contact.en}
+					span.tw-lang #{information.ui.sec_contact.tw}
 				div.google-maps
 					div(class='overlay' onClick="style.pointerEvents='none'")
 					iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.8098890308815!2d121.5407542774933!3d25.01303265900808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x90db5e44ee29f455!2sNational+Taiwan+University+of+Science+and+Technology!5e0!3m2!1sen!2s!4v1461339363621" frameborder='0' allowfullscreen)
@@ -125,21 +145,21 @@ html
 							div.div-td
 							div.div-td
 								p
-									| #{infomation.contact.school}
+									| #{information.contact.school}
 								p.sub
-									| #{infomation.contact.department}
+									| #{information.contact.department}
 						div.div-tr.address
 							div.div-td
 								i.fa.fa-map-marker
 							div.div-td
-								| #{infomation.contact.address}
+								| #{information.contact.address}
 								span.room
-									| #{infomation.contact.room}
+									| #{information.contact.room}
 						div.div-tr.telephone
 							div.div-td
 								i.fa.fa-phone
 							div.div-td
-								| #{infomation.contact.telephone}
+								| #{information.contact.telephone}
 
 		// Footer.
 		include ./components/footer.jade
@@ -149,7 +169,7 @@ html
 
 		// JavaScript inline.
 		script.
-			// Nav menu - scroll animate.
+			// Navigation menu - scroll animate.
 			$('nav.menu ul a').on('click', function (e) {
 				// Add 'active' class.
 				var $element = $(this);

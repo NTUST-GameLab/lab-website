@@ -1,6 +1,9 @@
 {
 	"title": "Graphics Animation Multimedia Edutainment Lab @ NTUST",
-	"introduction": "Welcome to GAME Lab!",
+	"introduction": {
+		"en": "Welcome to GAME Lab!",
+		"tw": "歡迎來到 GAME Lab，網站內容正在補充當中哦！"
+	},
 	"contact":
 		{
 			"school":     "國立台灣科技大學",
@@ -9,5 +12,63 @@
 			"room":       "（工程一館 E1-201-2 室）",
 			"telephone":  "886-2-2733-3141 #7928"
 		},
-	"copyright": "2015 - 2016 © Graphics Animation Multimedia Edutainment Laboratory"
+	"copyright": "2015 - 2016 © Graphics Animation Multimedia Edutainment Laboratory",
+	"ui": {
+		"language": {
+			"en": "English",
+			"tw": "中文"
+		},
+		"nav_about": {
+			"en": "About",
+			"tw": "簡介"
+		},
+		"nav_faculty": {
+			"en": "Faculty",
+			"tw": "教授"
+		},
+		"nav_members": {
+			"en": "Members",
+			"tw": "成員"
+		},
+		"nav_contact": {
+			"en": "Contact",
+			"tw": "聯繫"
+		},
+		"sec_about": {
+			"en": "About GAME&nbsp;Lab",
+			"tw": "關於電腦繪圖學實驗室"
+		},
+		"sec_faculty": {
+			"en": "Faculty",
+			"tw": "指導教授"
+		},
+		"sec_members": {
+			"en": "Members",
+			"tw": "團隊成員"
+		},
+		"sec_alumni": {
+			"en": "Alumni",
+			"tw": "畢業生"
+		},
+		"sec_contact": {
+			"en": "Contact Information",
+			"tw": "聯繫資訊"
+		},
+		"mem_research_area": {
+			"en": "Research Area:",
+			"tw": "研究領域:"
+		},
+		"mem_email": {
+			"en": "Email",
+			"tw": "郵件信箱"
+		},
+		"mem_socials": {
+			"en": "Socials",
+			"tw": "社群管道"
+		},
+		"mem_since": {
+			"en": "Since",
+			"tw": "加入實驗室"
+		}
+	}
 }

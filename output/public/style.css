@@ -24,12 +24,25 @@
 	src: url(./fonts/KaiGenGothicTC-Bold.ttf);
 }
 
+@font-face {
+	font-family: "wt005";
+	src: url(./fonts/wt005.ttf);
+}
+
 /* Global */
 
 html, body {
 	height: 100%;
 	margin: 0px;
 	background: #FFFFFF;
+}
+
+body:not(.en-lang-ctrl) .en-lang {
+	display: none;
+}
+
+body:not(.tw-lang-ctrl) .tw-lang {
+	display: none;
 }
 
 .forceFont {
@@ -55,7 +68,7 @@ h2.title {
 	font-weight: 300;
 	line-height: 1.5em;
 	letter-spacing: 0.05em;
-	font-family: 'Armata', sans-serif;
+	font-family: 'Armata', 'wt005', sans-serif;
 }
 
 h2.title::before, h2.title::after {
@@ -137,6 +150,10 @@ nav.menu li {
 	font-size: 1.25em;
 	line-height: 70px;
 	padding-right: 35px;
+}
+
+nav.menu li.language {
+	float: right;
 }
 
 .nav-padding {
@@ -348,8 +365,9 @@ nav.menu li {
 	background: #2A4492;
 }
 
-.member .header p {
+.member .header .title {
 	color: #FFF;
+	font-family: 'Roboto', 'NotoSans', sans-serif;
 	line-height: 50px;
 	font-size: 1.25em;
 	font-weight: 300;
@@ -408,6 +426,7 @@ nav.menu li {
 
 .member .content .domain .label {
 	color: #555;
+	font-family: 'ABeeZee', 'NotoSans', sans-serif;
 }
 
 .member .content .domain ul {
@@ -667,6 +686,7 @@ nav.menu li {
 	left: 0;
 	width: 100%;
 	color: #FFF;
+	font-family: 'Roboto', 'NotoSans', sans-serif;
 	font-weight: 300;
 	opacity: 0;
 	overflow: hidden;

@@ -1,7 +1,8 @@
 div.member
 	div.header.unselectable
 		p.title
-			| #{member.title}
+			span.en-lang #{member.title.en}
+			span.tw-lang #{member.title.tw}
 	div.thumbnail
 		img(src=member.thumbnail, onerror="$(this).attr('src', './public/images/default-thumbnail.png')")
 	div.content
@@ -10,7 +11,8 @@ div.member
 		div.domain
 			if (member.domains)
 				p.label.unselectable
-					| Research Area:
+					span.en-lang #{information.ui.mem_research_area.en}
+					span.tw-lang #{information.ui.mem_research_area.tw}
 				ul
 					each domain in member.domains
 						li #{domain}
@@ -21,14 +23,16 @@ div.member
 	div.contact
 		if (member.mail !== undefined)
 			p.label.unselectable
-				| Email
+				span.en-lang #{information.ui.mem_email.en}
+				span.tw-lang #{information.ui.mem_email.tw}
 			p.email
 				| #{member.mail[0]}&nbsp;
 				i.fa.fa-at
 				| &nbsp;#{member.mail[1]}
 		if (member.socials !== undefined)
 			p.label.unselectable
-				| Socials
+				span.en-lang #{information.ui.mem_socials.en}
+				span.tw-lang #{information.ui.mem_socials.tw}
 			ul.socials
 				if (member.socials.facebook !== undefined)
 					a(href=member.socials.facebook, target='_blank')
@@ -48,4 +52,6 @@ div.member
 							i.fa.fa-link
 	if (member.since !== undefined)
 		div.since.unselectable
-			p Since #{member.since}
+			span.en-lang #{information.ui.mem_since.en}&nbsp;
+			| #{member.since}
+			span.tw-lang &nbsp;#{information.ui.mem_since.tw}

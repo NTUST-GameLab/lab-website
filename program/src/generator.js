@@ -33,7 +33,7 @@ var options = {};
 // Import the customer data.
 var data = {};
 data.members    = require(importPath + 'members.json');
-data.infomation = require(importPath + 'info.json');
+data.information = require(importPath + 'info.json');
 
 // Hide the '@' in email information.
 data.members.faculty.map(emailExtractor);
