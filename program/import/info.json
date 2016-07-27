@@ -1,19 +1,21 @@
 {
 	"title": "Graphics Animation Multimedia Edutainment Lab @ NTUST",
-	"introduction": {
+	"introduction":
+	{
 		"en": "Welcome to GAME Lab!",
 		"tw": "歡迎來到 GAME Lab，網站內容正在補充當中哦！"
 	},
 	"contact":
-		{
-			"school":     "國立台灣科技大學",
-			"department": "資訊工程學系",
-			"address":    "106 台北市大安區基隆路四段四十三號",
-			"room":       "（工程一館 E1-201-2 室）",
-			"telephone":  "886-2-2733-3141 #7928"
-		},
+	{
+		"school":     "國立台灣科技大學",
+		"department": "資訊工程學系",
+		"address":    "106 台北市大安區基隆路四段四十三號",
+		"room":       "（工程一館 E1-201-2 室）",
+		"telephone":  "886-2-2733-3141 #7928"
+	},
 	"copyright": "2015 - 2016 © Graphics Animation Multimedia Edutainment Laboratory",
-	"ui": {
+	"ui": 
+	{
 		"language": {
 			"en": "English",
 			"tw": "中文"
@@ -37,6 +39,10 @@
 		"sec_about": {
 			"en": "About GAME&nbsp;Lab",
 			"tw": "關於電腦繪圖學實驗室"
+		},
+		"sec_projects": {
+			"en": "Projects",
+			"tw": "研究成果"
 		},
 		"sec_faculty": {
 			"en": "Faculty",

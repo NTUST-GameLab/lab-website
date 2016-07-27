@@ -128,8 +128,14 @@
 				"tw": "碩士生"
 			},
 			"since":     "2016-02",
-			"mail":      "temp@mail.com",
-			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200"
+			"mail":      "ardiawanbagusharisa@gmail.com",
+			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200",
+			"domains":   ["Game Development", "Procedural Content Generation", "Platformer Game"],
+			"socials":   {
+				"facebook": "http://facebook.com/ardiawanbagus",
+				"twitter" : "https://twitter.com/ardiawanbagush",
+				"website" : "http://about.me/ardiawanbagusharisa"
+			}
 		},
 		{
 			"studentId": "",
@@ -138,9 +144,13 @@
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2016-02",
-			"mail":      "temp@mail.com",
-			"thumbnail": "https://graph.facebook.com/100000446074157/picture?width=200&height=200"
+			"since":     "2016-03",
+			"mail":      "ericmina83@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000446074157/picture?width=200&height=200",
+			"domains":   ["Artificial Intelligence"],
+			"socials":   {
+				"facebook": "http://www.facebook.com/ericmina83"
+			}
 		},
 		{
 			"studentId": "",

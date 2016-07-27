@@ -120,7 +120,7 @@ nav.menu {
 
 nav.menu ul, nav.menu li {
 	list-style: none;
-	font-family: 'Armata', sans-serif;
+	font-family: 'Armata', 'NotoSans', sans-serif;
 }
 
 nav.menu ul {
@@ -620,6 +620,7 @@ nav.menu li.language {
 .member .contact .label {
 	font-size: 1.25em;
 	font-weight: 300;
+	font-family: 'Roboto', 'NotoSans', sans-serif;
 }
 
 .member .contact .label:not(:first-child) {

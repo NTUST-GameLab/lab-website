@@ -9,7 +9,7 @@ html
 		// Mobile setting.
 		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		// Metadata for Google.
-		meta(name='description' content='#{information.introduction}')
+		meta(name='description' content='#{information.introduction.en}')
 		meta(name='keywords' content='NTUST,GAMELab')
 		meta(name='author' content='GAMELab')
 		meta(name='copyright' content='GAMELab')
@@ -18,11 +18,11 @@ html
 		meta(property='og:type' content='website')
 		meta(property='og:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		meta(property='og:url' content='http://gamelab.csie.ntust.edu.tw/')
-		meta(property='og:description' content='#{information.introduction}')
+		meta(property='og:description' content='#{information.introduction.en}')
 		// Metadata for Twitter.
 		meta(name='twitter:card' content='summary')
 		meta(name='twitter:title' content='#{information.title}')
-		meta(name='twitter:description' content='#{information.introduction}')
+		meta(name='twitter:description' content='#{information.introduction.en}')
 		meta(name='twitter:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		// jQeury.
 		script(src='./public/jquery/jquery-3.0.0.min.js')
@@ -82,10 +82,11 @@ html
 					span.en-lang !{information.introduction.en}
 					span.tw-lang !{information.introduction.tw}
 
-			//- // Projects.
-			//- section#projects
-			//- 	h2.title
-			//- 		| Projects
+			// Projects.
+			section#projects
+				h2.title.unselectable
+					span.en-lang #{information.ui.sec_projects.en}
+					span.tw-lang #{information.ui.sec_projects.tw}
 
 			// Faculty.
 			section#faculty
@@ -181,13 +182,20 @@ html
 			});
 			// Navigation animation when scroll event.
 			$(window).on('scroll', function (e) {
+				// If in mobile mode, skip this step.
+				if (! $('nav.menu:visible').length) {
+					return;
+				}
 				var cursorPos = $(this).scrollTop();
-				$('nav.menu ul a').each(function () {
+				$('nav.menu ul a[data-link]').each(function () {
 					var $item  = $(this);
 					var $dest  = $($item.data('link'));
 					var top    = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();
 					var bottom = top + $dest.outerHeight();
-					if (cursorPos >= top && cursorPos <= bottom) {
+					if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+						$('nav.menu ul a[data-link]:last').parents('ul').find('a.active').removeClass('active');
+						$('nav.menu ul a[data-link]:last').addClass('active');
+					} else if (cursorPos >= top && cursorPos <= bottom) {
 						$item.parents('ul').find('a.active').removeClass('active');
 						$item.addClass('active');
 					}
