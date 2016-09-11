@@ -31,17 +31,6 @@
 		},
 		{
 			"studentId": "",
-			"name":      "李建緯",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2015-09",
-			"mail":      "@mail.ntust.edu.tw",
-			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200"
-		},
-		{
-			"studentId": "",
 			"name":      "鍾宇哲",
 			"title":     {
 				"en": "Master's degree",
@@ -51,21 +40,6 @@
 			"mail":      "firzen10459@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
 			"domains":   ["Data Analysis"]
-		},
-		{
-			"studentId": "",
-			"name":      "古廸耀",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2014-06",
-			"mail":      "anedzyl@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200",
-			"domains":   ["Computer Graphics", "PHP, JavaScript"],
-			"socials":   {
-				"website": "https://tw.linkedin.com/in/anedzyl"
-			}
 		},
 		{
 			"studentId": "M104150",
@@ -232,6 +206,31 @@
 
 	],
 	"alumni": [
-
+		{
+			"studentId": "",
+			"name":      "古廸耀",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2014-06",
+			"mail":      "anedzyl@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200",
+			"domains":   ["Computer Graphics", "PHP, JavaScript"],
+			"socials":   {
+				"website": "https://tw.linkedin.com/in/anedzyl"
+			}
+		},
+		{
+			"studentId": "",
+			"name":      "李建緯",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2015-09",
+			"mail":      "@mail.ntust.edu.tw",
+			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200"
+		}
 	]
 }

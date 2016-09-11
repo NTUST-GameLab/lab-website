@@ -9,6 +9,7 @@ Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 ## Environment
 
 * Node.js v4.4.7 LTS or above
+* npm
 
 
 ## Dependencies
@@ -21,10 +22,11 @@ Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 
 ## Steps
 
-### 0. Enter the project folder.
+### 0. Enter the project folder and install packages.
 
 ```shell
 $ cd ./lab-website
+$ npm install
 ```
 
 ### 1. Set the info of website.
