@@ -18,7 +18,7 @@
 	],
 	"graduate": [
 		{
-			"studentId": "",
+			"studentId": "D10515006",
 			"name":      "葉錦頤",
 			"title":     {
 				"en": "Doctoral candidate",
@@ -30,7 +30,7 @@
 			"domains":   ["Table Tennis"]
 		},
 		{
-			"studentId": "",
+			"studentId": "M10115096",
 			"name":      "鍾宇哲",
 			"title":     {
 				"en": "Master's degree",
@@ -42,7 +42,7 @@
 			"domains":   ["Data Analysis"]
 		},
 		{
-			"studentId": "M104150",
+			"studentId": "M10415052",
 			"name":      "趙柏勛",
 			"title":     {
 				"en": "Master's degree",
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"studentId": "M104150",
+			"studentId": "M10415076",
 			"name":      "宋承翰",
 			"title":     {
 				"en": "Master's degree",
@@ -69,7 +69,7 @@
 			"domains":   ["iOS App Development", "Computer Graphics"]
 		},
 		{
-			"studentId": "M104150",
+			"studentId": "M10415081",
 			"name":      "張伊姍",
 			"title":     {
 				"en": "Master's degree",
@@ -78,6 +78,21 @@
 			"since":     "2015-07",
 			"mail":      "fallinlove0811@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000129143964/picture?width=200&height=200"
+		},
+		{
+			"studentId": "M10415048",
+			"name":      "周熙庭",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-09",
+			"mail":      "hero70312@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000400103201/picture?width=200&height=200",
+			"domains":   ["Computer Graphics"],
+			"socials":   {
+				"facebook": "https://www.facebook.com/siting.chou"
+			}
 		},
 		{
 			"studentId": "M10415096",
@@ -112,7 +127,7 @@
 			}
 		},
 		{
-			"studentId": "",
+			"studentId": "M10515026",
 			"name":      "鄒濬安",
 			"title":     {
 				"en": "Master's degree",
@@ -127,7 +142,7 @@
 			}
 		},
 		{
-			"studentId": "",
+			"studentId": "M10515082",
 			"name":      "李允斌",
 			"title":     {
 				"en": "Master's degree",
@@ -142,7 +157,7 @@
 			}
 		},
 		{
-			"studentId": "",
+			"studentId": "M10515066",
 			"name":      "林廣柏",
 			"title":     {
 				"en": "Master's degree",
@@ -154,7 +169,7 @@
 			"domains":   ["Computer Graphics"]
 		},
 		{
-			"studentId": "",
+			"studentId": "M10515053",
 			"name":      "陳品陵",
 			"title":     {
 				"en": "Master's degree",
@@ -190,7 +205,7 @@
 			"domains":   ["Signal Processing"]
 		},
 		{
-			"studentId": "",
+			"studentId": "M10315059",
 			"name":      "丁奕豪",
 			"title":     {
 				"en": "Master's degree",
