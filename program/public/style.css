@@ -46,7 +46,7 @@ body:not(.tw-lang-ctrl) .tw-lang {
 }
 
 .forceFont {
-	font-family: 'NotoSans', 'Roboto' !important;
+	font-family: 'Roboto', 'NotoSans' !important;
 }
 
 img, .unselectable {
