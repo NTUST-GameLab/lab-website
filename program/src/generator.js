@@ -38,6 +38,8 @@ data.information = require(importPath + 'info.json');
 // Hide the '@' in email information.
 data.members.faculty.map(emailExtractor);
 data.members.graduate.map(emailExtractor);
+data.members.ungraduate.map(emailExtractor);
+data.members.alumni.map(emailExtractor);
 function emailExtractor(member) {
 	if (member.mail) {
 		var regRes = member.mail.match(/(.+)@(.+)/);
