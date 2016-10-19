@@ -272,19 +272,104 @@ nav.menu li.language {
 	margin-bottom: 50px;
 }
 
-#about-us p {
+#about-us .content {
+	position: relative;
 	color: #545454;
-	text-align: center;
+	text-align: left;
 	font-size: 1.35em;
 	font-family: 'Pontano Sans', sans-serif;
-	line-height: 1.50em;
+	line-height: 1.65em;
 	padding: 0 70px;
 }
 
+#about-us .content p {
+	margin-bottom: 1.0em;
+}
+
+#about-us .content .text {
+	height: 15em;
+	overflow: hidden;
+	-webkit-transition: height 1500ms ease;
+	   -moz-transition: height 1500ms ease;
+	    -ms-transition: height 1500ms ease;
+	     -o-transition: height 1500ms ease;
+	        transition: height 1500ms ease;
+}
+
+#about-us .content.expanded .text {
+	height: auto;
+}
+
+#about-us .content .read-more-mask {
+	position: absolute;
+	top: 12em;
+    left: 0;
+    right: 0;
+	width: 100%;
+	height: 3em;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background:      -o-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background:    -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background:         linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+#about-us .content.expanded .read-more-mask {
+	display: none;
+}
+
+#about-us .content .read-more-button {
+	position: relative;
+	top: 1.5em;
+	width: 200px;
+	height: 2.0em;
+	color: #FFF;
+	text-align: center;
+	line-height: 2.0em;
+	font-family: 'NotoSans', sans-serif;
+	background: #2A4492;
+	margin: 0 auto;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 400px) {
-	#about-us p {
+	#about-us .content {
 		padding: 0 10px;
 	}
+}
+
+/* Project */
+
+#projects .title {
+	margin-bottom: 50px;
+}
+
+#projects .content {
+	text-align: center;
+}
+
+#projects .content iframe {
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+#projects .content .more-video-button {
+	width: 285px;
+	height: 2.5em;
+	color: #FFF;
+	font-size: 1.25em;
+	text-align: center;
+	line-height: 2.5em;
+	font-family: 'NotoSans', sans-serif;
+	background: #2A4492;
+	margin: 0 auto;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#projects .content .more-video-button a {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* Faculty */

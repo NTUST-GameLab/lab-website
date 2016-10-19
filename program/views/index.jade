@@ -9,7 +9,7 @@ html
 		// Mobile setting.
 		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		// Metadata for Google.
-		meta(name='description' content='#{information.introduction.en}')
+		meta(name='description' content='!{information.introduction.en}')
 		meta(name='keywords' content='NTUST,GAMELab')
 		meta(name='author' content='GAMELab')
 		meta(name='copyright' content='GAMELab')
@@ -18,11 +18,11 @@ html
 		meta(property='og:type' content='website')
 		meta(property='og:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		meta(property='og:url' content='http://gamelab.csie.ntust.edu.tw/')
-		meta(property='og:description' content='#{information.introduction.en}')
+		meta(property='og:description' content='!{information.introduction.en}')
 		// Metadata for Twitter.
 		meta(name='twitter:card' content='summary')
 		meta(name='twitter:title' content='#{information.title}')
-		meta(name='twitter:description' content='#{information.introduction.en}')
+		meta(name='twitter:description' content='!{information.introduction.en}')
 		meta(name='twitter:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
 		// jQeury.
 		script(src='./public/jquery/jquery-3.0.0.min.js')
@@ -78,15 +78,25 @@ html
 				h2.title.unselectable
 					span.en-lang !{information.ui.sec_about.en}
 					span.tw-lang !{information.ui.sec_about.tw}
-				p
-					span.en-lang !{information.introduction.en}
-					span.tw-lang !{information.introduction.tw}
+				div.content
+					div.text
+						div.en-lang !{information.introduction.en}
+						div.tw-lang !{information.introduction.tw}
+					div.read-more-mask
+						div.read-more-button.unselectable
+							span.en-lang #{information.ui.btn_read_more.en}
+							span.tw-lang #{information.ui.btn_read_more.tw}
 
 			// Projects.
 			section#projects
 				h2.title.unselectable
 					span.en-lang #{information.ui.sec_projects.en}
 					span.tw-lang #{information.ui.sec_projects.tw}
+				div.content
+					iframe(width='560' height='315' src='https://www.youtube.com/embed/8oFlB2qmmoM' frameborder='0' allowfullscreen)
+					div.more-video-button.unselectable
+						a(href='https://www.youtube.com/user/gamelabndhu/videos' target='_blank')
+							| More videos on YouTube >
 
 			// Faculty.
 			section#faculty
@@ -209,3 +219,8 @@ html
 			var maxNum = 3;
 			var num = Math.floor((Math.random() * maxNum) + 1);
 			$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg)');
+			// Read more button event.
+			$('.read-more-button').on('click', function (e) {
+				$content = $(this).parents('.content');
+				$content.addClass('expanded');
+			});
