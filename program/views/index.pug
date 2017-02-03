@@ -1,0 +1,226 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		// Title.
+		title #{information.title}
+		// Shortcut icon.
+		link(rel='shortcut icon' href='./public/images/logo.png')
+		// Mobile setting.
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		// Metadata for Google.
+		meta(name='description' content='!{information.introduction.en}')
+		meta(name='keywords' content='NTUST,GAMELab')
+		meta(name='author' content='GAMELab')
+		meta(name='copyright' content='GAMELab')
+		// Metadata for Facebook.
+		meta(property='og:title' content='#{information.title}')
+		meta(property='og:type' content='website')
+		meta(property='og:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
+		meta(property='og:url' content='http://gamelab.csie.ntust.edu.tw/')
+		meta(property='og:description' content='!{information.introduction.en}')
+		// Metadata for Twitter.
+		meta(name='twitter:card' content='summary')
+		meta(name='twitter:title' content='#{information.title}')
+		meta(name='twitter:description' content='!{information.introduction.en}')
+		meta(name='twitter:image' content='http://gamelab.csie.ntust.edu.tw/public/images/logo.png')
+		// jQeury.
+		script(src='./public/jquery/jquery-3.0.0.min.js')
+		// Reset CSS.
+		link(rel='stylesheet', href='./public/reset.css')
+		// Default CSS.
+		link(rel='stylesheet', href='./public/style.css')
+		// Font awesome CSS.
+		link(rel='stylesheet', href='./public/font-awesome-4.6.0/css/font-awesome.min.css')
+		// Google Fonts.
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Armata')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pontano+Sans')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,300')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=ABeeZee')
+
+	body.en-lang-ctrl
+		// Nav menu.
+		nav.menu.unselectable
+			ul
+				li
+					a(href='#', onclick='return false;', data-link='#about-us')
+						span.en-lang #{information.ui.nav_about.en}
+						span.tw-lang #{information.ui.nav_about.tw}
+				li
+					a(href='#', onclick='return false;', data-link='#faculty')
+						span.en-lang #{information.ui.nav_faculty.en}
+						span.tw-lang #{information.ui.nav_faculty.tw}
+				li
+					a(href='#', onclick='return false;', data-link='#members')
+						span.en-lang #{information.ui.nav_members.en}
+						span.tw-lang #{information.ui.nav_members.tw}
+				li
+					a(href='#', onclick='return false;', data-link='#map')
+						span.en-lang #{information.ui.nav_contact.en}
+						span.tw-lang #{information.ui.nav_contact.tw}
+				li.language
+					a(href='#', onclick="$('body').removeClass().addClass('en-lang-ctrl'); return false;")
+						| #{information.ui.language.en}
+				li.language
+					a(href='#', onclick="$('body').removeClass().addClass('tw-lang-ctrl'); return false;")
+						| #{information.ui.language.tw}
+		div.nav-padding
+
+		// Content.
+		div.main-content
+			// Photo album.
+			section#photo-album
+				div.photo
+				div.mask
+
+			// About us.
+			section#about-us
+				h2.title.unselectable
+					span.en-lang !{information.ui.sec_about.en}
+					span.tw-lang !{information.ui.sec_about.tw}
+				div.content
+					div.text
+						div.en-lang !{information.introduction.en}
+						div.tw-lang !{information.introduction.tw}
+					div.read-more-mask
+						div.read-more-button.unselectable
+							span.en-lang #{information.ui.btn_read_more.en}
+							span.tw-lang #{information.ui.btn_read_more.tw}
+
+			// Projects.
+			section#projects
+				h2.title.unselectable
+					span.en-lang #{information.ui.sec_projects.en}
+					span.tw-lang #{information.ui.sec_projects.tw}
+				div.content
+					iframe(width='560' height='315' src='https://www.youtube.com/embed/8oFlB2qmmoM' frameborder='0' allowfullscreen)
+					div.more-video-button.unselectable
+						a(href='https://www.youtube.com/user/gamelabndhu/videos' target='_blank')
+							| More videos on YouTube >
+
+			// Faculty.
+			section#faculty
+				h2.title.unselectable
+					span.en-lang #{information.ui.sec_faculty.en}
+					span.tw-lang #{information.ui.sec_faculty.tw}
+				div#faculty-members.members
+					each member in members.faculty
+						include ./components/member.pug
+
+			// Members.
+			section#members
+				// Current members
+				h2.title.unselectable
+					span.en-lang #{information.ui.sec_members.en}
+					span.tw-lang #{information.ui.sec_members.tw}
+				if members.graduate && members.graduate.length
+					div#graduate-members.members
+						each member in members.graduate
+							include ./components/member.pug
+				if members.ungraduate && members.ungraduate.length
+					div#ungraduate-members.members
+						each member in members.ungraduate
+							include ./components/member.pug
+
+				// Alumni
+				if members.alumni && members.alumni.length
+					h2.title
+						span.en-lang #{information.ui.sec_alumni.en}
+						span.tw-lang #{information.ui.sec_alumni.tw}
+					div#alumni-members.members
+						each member in members.alumni
+							include ./components/member.pug
+
+				script.
+					function toggleNextPage(element, switcher) {
+						// Reset all actived.
+						$('.active.member').removeClass('active');
+						if (switcher === 'open') {
+							$(element).parent().addClass('active');
+						} else {
+							$(element).parent().removeClass('active');
+						}
+					}
+
+			// Map.
+			section#map
+				h2.title.unselectable
+					span.en-lang #{information.ui.sec_contact.en}
+					span.tw-lang #{information.ui.sec_contact.tw}
+				div.google-maps
+					div(class='overlay' onClick="style.pointerEvents='none'")
+					iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.8098890308815!2d121.5407542774933!3d25.01303265900808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x90db5e44ee29f455!2sNational+Taiwan+University+of+Science+and+Technology!5e0!3m2!1sen!2s!4v1461339363621" frameborder='0' allowfullscreen)
+				div.information.forceFont
+					div.div-table
+						div.div-tr.school
+							div.div-td
+							div.div-td
+								p
+									| #{information.contact.school}
+								p.sub
+									| #{information.contact.department}
+						div.div-tr.address
+							div.div-td
+								i.fa.fa-map-marker
+							div.div-td
+								| #{information.contact.address}
+								span.room
+									| #{information.contact.room}
+						div.div-tr.telephone
+							div.div-td
+								i.fa.fa-phone
+							div.div-td
+								| #{information.contact.telephone}
+
+		// Footer.
+		include ./components/footer.pug
+
+		// Google Analytics.
+		include ./components/ga.js
+
+		// JavaScript inline.
+		script.
+			// Navigation menu - scroll animate.
+			$('nav.menu ul a').on('click', function (e) {
+				// Add 'active' class.
+				var $element = $(this);
+				// Scroll with the same speed.
+				var $dest  = $($element.data('link'));
+				var destY  = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();
+				var during = Math.abs((window.pageYOffset || document.documentElement.scrollTop) - destY) * 0.75;
+				$('html, body').animate({ scrollTop: destY + 1 }, during);
+			});
+			// Navigation animation when scroll event.
+			$(window).on('scroll', function (e) {
+				// If in mobile mode, skip this step.
+				if (! $('nav.menu:visible').length) {
+					return;
+				}
+				var cursorPos = $(this).scrollTop();
+				$('nav.menu ul a[data-link]').each(function () {
+					var $item  = $(this);
+					var $dest  = $($item.data('link'));
+					var top    = $dest.offset().top - parseInt($dest.css('marginTop')) - $('nav.menu').height();
+					var bottom = top + $dest.outerHeight();
+					if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+						$('nav.menu ul a[data-link]:last').parents('ul').find('a.active').removeClass('active');
+						$('nav.menu ul a[data-link]:last').addClass('active');
+					} else if (cursorPos >= top && cursorPos <= bottom) {
+						$item.parents('ul').find('a.active').removeClass('active');
+						$item.addClass('active');
+					}
+				});
+			});
+			// Disable all image drag event.
+			$('img').on('dragstart', function (event) {
+				event.preventDefault();
+			});
+			// Random image cover.
+			var maxNum = 3;
+			var num = Math.floor((Math.random() * maxNum) + 1);
+			$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg)');
+			// Read more button event.
+			$('.read-more-button').on('click', function (e) {
+				$content = $(this).parents('.content');
+				$content.addClass('expanded');
+			});

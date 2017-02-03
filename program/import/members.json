@@ -69,17 +69,6 @@
 			"domains":   ["iOS App Development", "Computer Graphics"]
 		},
 		{
-			"studentId": "M10415081",
-			"name":      "張伊姍",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2015-07",
-			"mail":      "fallinlove0811@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000129143964/picture?width=200&height=200"
-		},
-		{
 			"studentId": "M10415048",
 			"name":      "周熙庭",
 			"title":     {
@@ -203,7 +192,12 @@
 			"mail":      "will830508123@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000324092195/picture?width=200&height=200",
 			"domains":   ["Signal Processing"]
-		},
+		}
+	],
+	"ungraduate": [
+
+	],
+	"alumni": [
 		{
 			"studentId": "M10315059",
 			"name":      "丁奕豪",
@@ -215,12 +209,7 @@
 			"mail":      "den2092@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000115218367/picture?width=200&height=200",
 			"domains":   ["Embedded Systems", "Image Processing"]
-		}
-	],
-	"ungraduate": [
-
-	],
-	"alumni": [
+		},
 		{
 			"studentId": "",
 			"name":      "古廸耀",

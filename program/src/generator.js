@@ -10,7 +10,7 @@
 	GitHub: http://github.com/grass0916
 	Site:   http://salmon.tw
 
-	Copyright 2016 Salmon @ NTUST GAME Lab
+	Copyright 2017 Salmon @ NTUST GAME Lab
 	Released under the MIT license
 
 */
@@ -18,7 +18,7 @@
 var fs         = require('fs');
 var ncp        = require('ncp');
 var rmrf       = require('rimraf');
-var jade       = require('jade');
+var pug        = require('pug');
 var fontSpider = require('font-spider');
 
 // Paths setting.
@@ -27,7 +27,7 @@ var importPath = __dirname + '/../import/';
 var publicPath = __dirname + '/../public/';
 var outputPath = __dirname + '/../../output/';
 
-// Options for jade.
+// Options for pug.
 var options = {};
 
 // Import the customer data.
@@ -52,7 +52,7 @@ function emailExtractor(member) {
 
 // Render the index page.
 options = {};
-var indexPage = jade.compileFile(viewsPath + 'index.jade', options);
+var indexPage = pug.compileFile(viewsPath + 'index.pug', options);
 var indexHTML = indexPage(data);
 
 // Update the output HTML.
