@@ -14,7 +14,7 @@ Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 
 ## Dependencies
 
-* jade v1.11.0 (has renamed to **pug**)
+* pug v2.0.0
 * ncp v2.0.0
 * rimraf v2.5.4
 * font-spider 1.3.1

@@ -427,7 +427,7 @@ nav.menu li.language {
 
 .members {
 	margin: 0px auto;
-    text-align: center;
+	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 50px;
 }
@@ -932,4 +932,88 @@ footer .designer {
 		line-height: 1.5em;
 		padding-bottom: 10px;
 	}
+}
+
+/* Extended file - graduation documents */
+
+.graduations {
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.graduation {
+	position: relative;
+	display: inline-block;
+	width: 265px;
+	height: 175px;
+	background-image: url(./images/profile-bg.png);
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+	margin: 10px 10px 40px 10px;
+}
+
+.graduation .header {
+	width: 100%;
+	height: 50px;
+	background: #2A4492;
+}
+
+.graduation .header .title {
+	color: #FFF;
+	font-family: 'Roboto', 'NotoSans', sans-serif;
+	line-height: 50px;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+.graduation .content {
+	width: 245px;
+	height: 105px;
+	background: rgba(255, 255, 255, 0.75);
+	margin: 10px;
+}
+
+.graduation .content .name {
+	color: #333;
+	line-height: 1.95em;
+	font-size: 1.15em;
+	overflow: hidden;
+}
+
+.graduation .content .name::before, .graduation .content .name::after {
+	content: "";
+	display: inline-block;
+	width: 50%;
+	margin: 0 .5em 0 -55%;
+	vertical-align: middle;
+	border-bottom: 1px solid;
+	border-color: #DDD;
+}
+
+.graduation .content .name::after {
+	margin: 0 -55% 0 .5em;
+}
+
+.graduation .content .id {
+	color: #777;
+	line-height: 1.75em;
+	font-size: 1.05em;
+	overflow: hidden;
+}
+
+.graduation .content ul.files {
+	list-style-type: none;
+	padding: 8px 16px 8px 16px;
+}
+
+.graduation .content ul.files li {
+	display: inline-block;
+	color: #000;
+	font-size: 1.00em;
+	line-height: 15px;
+	border-radius: 50%;
+	margin-bottom: 0.25em;
 }

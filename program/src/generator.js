@@ -61,6 +61,7 @@ rmrf(outputPath, {}, function (err) {
 		console.log(err);
 		process.exit();
 	}
+
 	// Write the HTML.
 	fs.mkdirSync(outputPath);
 	fs.writeFileSync(outputPath + 'index.html', indexHTML);
@@ -85,4 +86,8 @@ rmrf(outputPath, {}, function (err) {
 			console.error(errors);
 		});
 	});
+
+	// Copy the insides in 'extends'.
+	fs.mkdirSync(outputPath + 'productions');
+	ncp(__dirname + '/extends/', outputPath, function (err) { });
 });
