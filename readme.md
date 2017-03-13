@@ -14,10 +14,12 @@ Written by Ze-Hao, Wang ([http://salmon.tw](http://salmon.tw))
 
 ## Dependencies
 
+* async v2.1.5
 * pug v2.0.0
 * ncp v2.0.0
 * rimraf v2.5.4
 * font-spider 1.3.1
+* html-minifier ^3.4.0
 
 
 ## Steps
@@ -83,7 +85,7 @@ Member object fits in `faculty`, `graduate`, `ungraduate` and `alumni`. Please f
 * **title**
 * **since** (Optional)
 * **mail** (Optional)
-* **thumbnail** (Optional)
+* **thumbnail**
 * **domains** (Optional. Students can fill to 2 data, faculty can fill 4 data.)
 * **socials** (Optional)
 	* facebook, google, twitter and website

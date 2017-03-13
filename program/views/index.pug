@@ -216,9 +216,9 @@ html
 				event.preventDefault();
 			});
 			// Random image cover.
-			var maxNum = 3;
-			var num = Math.floor((Math.random() * maxNum) + 1);
-			$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + num + '.jpg)');
+			var coverList   = "#{covers}".split(',');
+			var randomCover = coverList[Math.floor((Math.random() * coverList.length))];
+			$('#photo-album .photo').css('background-image', 'url(./public/images/cover/' + randomCover);
 			// Read more button event.
 			$('.read-more-button').on('click', function (e) {
 				$content = $(this).parents('.content');

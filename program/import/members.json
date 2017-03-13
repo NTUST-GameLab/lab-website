@@ -170,28 +170,16 @@
 			"domains":   ["Computer Graphics"]
 		},
 		{
-			"studentId": "",
-			"name":      "楊羽農",
+			"studentId": "M10115064",
+			"name":      "劉宥銘",
 			"title":     {
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2015-07",
-			"mail":      "yang810134@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100002016524382/picture?width=200&height=200",
-			"domains":   ["Signal Processing"]
-		},
-		{
-			"studentId": "",
-			"name":      "廖奕証",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-07",
-			"mail":      "will830508123@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000324092195/picture?width=200&height=200",
-			"domains":   ["Signal Processing"]
+			"since":     "2017-02",
+			"mail":      "sixtsj10616@gmail.com",
+			"thumbnail": "",
+			"domains":   [""]
 		}
 	],
 	"ungraduate": [

@@ -16,30 +16,20 @@
 */
 
 var fs         = require('fs');
+var async      = require('async');
 var ncp        = require('ncp');
 var rmrf       = require('rimraf');
 var pug        = require('pug');
 var fontSpider = require('font-spider');
+var minify     = require('html-minifier').minify;
 
 // Paths setting.
 var viewsPath  = __dirname + '/../views/';
 var importPath = __dirname + '/../import/';
 var publicPath = __dirname + '/../public/';
+var coverPath  = __dirname + '/../public/images/cover/';
 var outputPath = __dirname + '/../../output/';
 
-// Options for pug.
-var options = {};
-
-// Import the customer data.
-var data = {};
-data.members    = require(importPath + 'members.json');
-data.information = require(importPath + 'info.json');
-
-// Hide the '@' in email information.
-data.members.faculty.map(emailExtractor);
-data.members.graduate.map(emailExtractor);
-data.members.ungraduate.map(emailExtractor);
-data.members.alumni.map(emailExtractor);
 function emailExtractor(member) {
 	if (member.mail) {
 		var regRes = member.mail.match(/(.+)@(.+)/);
@@ -50,44 +40,63 @@ function emailExtractor(member) {
 	delete member.mail;
 }
 
-// Render the index page.
-options = {};
-var indexPage = pug.compileFile(viewsPath + 'index.pug', options);
-var indexHTML = indexPage(data);
-
-// Update the output HTML.
-rmrf(outputPath, {}, function (err) {
-	if (err) {
-		console.log(err);
-		process.exit();
-	}
-
-	// Write the HTML.
-	fs.mkdirSync(outputPath);
-	fs.writeFileSync(outputPath + 'index.html', indexHTML);
-	// Clone the public folder.
-	fs.mkdirSync(outputPath + 'public');
-	ncp(publicPath, outputPath + 'public', function (err) {
-		// Then, minimize the font via font-spider (Dynamic subsetting).
-		// p.s. This package not suppot '.oft', please transfer them first. (Maybe you can choose 'fontforge')
-		fontSpider.spider([__dirname + '/../../output/index.html'], {
-			// Ignore Google fonts APIs.
-			ignore: ['Armata', 'Pontano', 'Roboto', 'ABeeZee'],
-			unique: true,
-			backup: false,
-			silent: true
-		}).then(function (webFonts) {
-			return fontSpider.compressor(webFonts, {
-				backup: false
-			});
-		}).then(function (webFonts) {
-			// console.log(webFonts);
-		}).catch(function (errors) {
-			console.error(errors);
+async.waterfall([
+	// Dynamic covers.
+	function (callback) {
+		// Import the customer data.
+		var data = {};
+		data.members     = require(importPath + 'members.json');
+		data.information = require(importPath + 'info.json');
+		// Hide the '@' in email information.
+		data.members.faculty.map(emailExtractor);
+		data.members.graduate.map(emailExtractor);
+		data.members.ungraduate.map(emailExtractor);
+		data.members.alumni.map(emailExtractor);
+		// Read the path.
+		fs.readdir(coverPath, function (err, files) {
+			data.covers = files
+			callback(err, data);
 		});
-	});
-
-	// Copy the insides in 'extends'.
-	fs.mkdirSync(outputPath + 'productions');
-	ncp(__dirname + '/extends/', outputPath, function (err) { });
-});
+	},
+	// Render the output.
+	function (data, callback) {
+		// Options for pug.
+		var options   = {};
+		var indexPage = pug.compileFile(viewsPath + 'index.pug', options);
+		var indexHTML = minify(indexPage(data), { removeAttributeQuotes: true, removeComments: true, minifyJS: true, minifyCSS: true });
+		// Update the output HTML.
+		rmrf(outputPath, {}, function (err) {
+			if (err) {
+				console.log(err);
+				process.exit();
+			}
+			// Write the HTML.
+			fs.mkdirSync(outputPath);
+			fs.writeFileSync(outputPath + 'index.html', indexHTML);
+			// Clone the public folder.
+			fs.mkdirSync(outputPath + 'public');
+			ncp(publicPath, outputPath + 'public', function (err) {
+				// Then, minimize the font via font-spider (Dynamic subsetting).
+				// p.s. This package not suppot '.oft', please transfer them first. (Maybe you can choose 'fontforge')
+				fontSpider.spider([__dirname + '/../../output/index.html'], {
+					// Ignore Google fonts APIs.
+					ignore: ['Armata', 'Pontano', 'Roboto', 'ABeeZee'],
+					unique: true,
+					backup: false,
+					silent: true
+				}).then(function (webFonts) {
+					return fontSpider.compressor(webFonts, {
+						backup: false
+					});
+				}).then(function (webFonts) {
+					// console.log(webFonts);
+				}).catch(function (errors) {
+					console.error(errors);
+				});
+			});
+			// Copy the insides in 'extends'.
+			fs.mkdirSync(outputPath + 'productions');
+			ncp(__dirname + '/extends/', outputPath, function (err) { });
+		});
+	}
+]);
