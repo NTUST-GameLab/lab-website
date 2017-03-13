@@ -30,6 +30,18 @@
 			"domains":   ["Table Tennis"]
 		},
 		{
+			"studentId": "",
+			"name":      "白正冬",
+			"title":     {
+				"en": "Doctoral candidate",
+				"tw": "博士候選人"
+			},
+			"since":     "2017-02",
+			"mail":      "c5046@ms14.hinet.net",
+			"thumbnail": "https://graph.facebook.com/100000357900623/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
 			"studentId": "M10115096",
 			"name":      "鍾宇哲",
 			"title":     {
@@ -155,7 +167,7 @@
 			"since":     "2016-06",
 			"mail":      "npes89033@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100001000781662/picture?width=200&height=200",
-			"domains":   ["Computer Graphics"]
+			"domains":   ["Machine Learning"]
 		},
 		{
 			"studentId": "M10515053",
@@ -178,7 +190,55 @@
 			},
 			"since":     "2017-02",
 			"mail":      "sixtsj10616@gmail.com",
-			"thumbnail": "",
+			"thumbnail": "https://graph.facebook.com/100000148642757/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "來國彥",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-02",
+			"mail":      "s900127127@gmail.com",
+			"thumbnail": "https://graph.facebook.com/1378568129/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "林秝安",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-02",
+			"mail":      "jenny84311@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000101865813/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "林益銓",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-02",
+			"mail":      "ewsngoole@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100010074434444/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "林德潔",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-02",
+			"mail":      "neibi0406@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000210302054/picture?width=200&height=200",
 			"domains":   [""]
 		}
 	],
