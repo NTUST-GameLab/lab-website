@@ -87,6 +87,22 @@ html
 							span.en-lang #{information.ui.btn_read_more.en}
 							span.tw-lang #{information.ui.btn_read_more.tw}
 
+			// News and ads.
+			section#news
+				h2.title.unselectable
+					span.en-lang !{information.ui.sec_news.en}
+					span.tw-lang !{information.ui.sec_news.tw}
+				if information.news && information.news.length
+					each news in information.news
+						div.container
+							div.cover
+								img(style='width:100%; height:100%;' src='https://t.kfs.io/upload_images/59602/IMG_6259s_large.JPG')
+							div.content
+								p.title #{news.title}
+								p.text !{news.text}
+								p.link
+									a(href=news.link, target='_blank') Link >>
+
 			// Projects.
 			section#projects
 				h2.title.unselectable

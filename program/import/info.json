@@ -13,6 +13,13 @@
 		"room":       "（工程一館 E1-201-2 室）",
 		"telephone":  "886-2-2733-3141 #6809"
 	},
+	"news": [
+		{
+			"title": "GDC 2017 分享會",
+			"text":  "【活動時間】<br>4/8（六）13:30 ~ 18:00 （13:30 入場，14:00 正式開始；請盡可能於正式開始前簽到）<br><br>【活動地點】<br>資策會 15 樓禮堂（捷運大安站斜對面）<br>台北市復興南路一段 390 號 15 樓",
+			"link":  "igda-tw.kktix.cc/events/gdc2017-sharing"
+		}
+	],
 	"copyright": "2015 - 2017 © Graphics Animation Multimedia Edutainment Laboratory",
 	"ui": 
 	{
@@ -47,6 +54,10 @@
 		"sec_projects": {
 			"en": "Projects",
 			"tw": "研究成果"
+		},
+		"sec_news": {
+			"en": "News",
+			"tw": "最新消息"
 		},
 		"sec_faculty": {
 			"en": "Faculty",

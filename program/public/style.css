@@ -338,6 +338,57 @@ nav.menu li.language {
 	}
 }
 
+/* News */
+
+#news .container {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+#news .container .cover {
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+
+#news .container .content {
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 100%;
+	color: #000;
+	background: #FFFFFF;
+	background: -webkit-linear-gradient(left,     rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
+	background:    -moz-linear-gradient(right,    rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
+	background:      -o-linear-gradient(right,    rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
+	background:         linear-gradient(to right, rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
+}
+
+#news .container .content .title {
+	width: 100%;
+	font-size: 1.75em;
+	padding-left: 40px;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+}
+
+#news .container .content .text {
+	width: 100%;
+	font-size: 1.25em;
+	padding-left: 60px;
+}
+
+#news .container .content .link {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+	text-align: right;
+	font-size: 1.25em;
+	color: #333333;
+	margin-right: 24px;
+}
+
 /* Project */
 
 #projects .title {
