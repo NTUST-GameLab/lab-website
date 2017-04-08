@@ -191,7 +191,7 @@
 			"since":     "2017-02",
 			"mail":      "sixtsj10616@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000148642757/picture?width=200&height=200",
-			"domains":   [""]
+			"domains":   ["3D Tree Synthesis"]
 		},
 		{
 			"studentId": "",
@@ -200,7 +200,7 @@
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2017-02",
+			"since":     "2017-09",
 			"mail":      "s900127127@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1378568129/picture?width=200&height=200",
 			"domains":   [""]
@@ -212,19 +212,19 @@
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2017-02",
+			"since":     "2017-09",
 			"mail":      "jenny84311@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000101865813/picture?width=200&height=200",
 			"domains":   [""]
 		},
 		{
 			"studentId": "",
-			"name":      "林益銓",
+			"name":      "劉益銓",
 			"title":     {
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2017-02",
+			"since":     "2017-09",
 			"mail":      "ewsngoole@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100010074434444/picture?width=200&height=200",
 			"domains":   [""]
@@ -236,9 +236,33 @@
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
-			"since":     "2017-02",
+			"since":     "2017-09",
 			"mail":      "neibi0406@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000210302054/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "王丞珍",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-09",
+			"mail":      "",
+			"thumbnail": "https://graph.facebook.com/100003636997404/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "",
+			"name":      "馮國軒",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-09",
+			"mail":      "",
+			"thumbnail": "",
 			"domains":   [""]
 		}
 	],
