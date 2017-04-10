@@ -95,13 +95,15 @@ html
 				if information.news && information.news.length
 					each news in information.news
 						div.container
-							div.cover
-								img(style='width:100%; height:100%;' src='https://t.kfs.io/upload_images/59602/IMG_6259s_large.JPG')
-							div.content
+							div.news-content.unselectable
 								p.title #{news.title}
 								p.text !{news.text}
-								p.link
-									a(href=news.link, target='_blank') Link >>
+							div.news-link.unselectable
+								div.download
+									span.en-lang !{information.ui.news_link.en}
+									span.tw-lang !{information.ui.news_link.tw}
+							a(href=news.link, target='_blank')
+								div.news-cover(style="background-image: url('" + news.thumbnail + "');")
 
 			// Projects.
 			section#projects

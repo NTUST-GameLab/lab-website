@@ -58,6 +58,11 @@ img, .unselectable {
 	        user-select: none;
 }
 
+img {
+	pointer-events: none;
+}
+
+
 h2.title {
 	width: 70%;
 	margin: 0.7em auto;
@@ -277,7 +282,7 @@ nav.menu li.language {
 	color: #545454;
 	text-align: left;
 	font-size: 1.35em;
-	font-family: 'Pontano Sans', sans-serif;
+	font-family: 'Roboto', 'NotoSans';
 	line-height: 1.65em;
 	padding: 0 70px;
 }
@@ -340,53 +345,81 @@ nav.menu li.language {
 
 /* News */
 
+#news {
+	text-align: center;
+}
+
 #news .container {
-	width: 100%;
-	height: 300px;
-	overflow: hidden;
-}
-
-#news .container .cover {
-	float: left;
-	width: 60%;
-	height: 100%;
-}
-
-#news .container .content {
+	display: inline-block;
 	position: relative;
-	float: left;
-	width: 40%;
+	width: 350px;
+	height: 200px;
+	font-family: 'Roboto', 'NotoSans';
+	border: 2px solid rgb(215, 215, 215);
+	border-radius: 5px;
+	box-shadow: 4px 4px 0 rgba(215, 215, 215, .5);
+	overflow: hidden;
+	margin: 20px 30px;
+}
+
+#news .container .news-content {
+	width: 100%;
 	height: 100%;
-	color: #000;
-	background: #FFFFFF;
-	background: -webkit-linear-gradient(left,     rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
-	background:    -moz-linear-gradient(right,    rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
-	background:      -o-linear-gradient(right,    rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
-	background:         linear-gradient(to right, rgba(119, 119, 119, 0.5) 1%, rgba(170, 170, 170, 0.5) 10%, #EEE 70%, #FFF 100%);
+	background-image: url(./images/profile-bg.png);
+	border-radius: 5px;
 }
 
-#news .container .content .title {
-	width: 100%;
-	font-size: 1.75em;
-	padding-left: 40px;
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-}
-
-#news .container .content .text {
-	width: 100%;
+#news .container .news-content .title {
 	font-size: 1.25em;
-	padding-left: 60px;
+	text-align: center;
+	padding: 10px;
 }
 
-#news .container .content .link {
+#news .container .news-content .text {
+	line-height: 1.35em;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#news .container .news-link .download {
 	position: absolute;
-	bottom: 1em;
+	bottom: 0;
 	width: 100%;
-	text-align: right;
-	font-size: 1.25em;
-	color: #333333;
-	margin-right: 24px;
+	height: 50px;
+	color: #FFF;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+	text-align: center;
+	text-shadow: 2px 2px 4px #000;
+	line-height: 2.5em;
+	font-size: 1.5em;
+}
+
+#news .container .news-cover {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #AAA;
+	border-radius: 5px;
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease-in-out;
+	   -moz-transition: opacity 500ms ease-in-out;
+	    -ms-transition: opacity 500ms ease-in-out;
+	     -o-transition: opacity 500ms ease-in-out;
+	        transition: opacity 500ms ease-in-out;
+	background-size: cover;
+}
+
+#news .container .news-cover:hover {
+	opacity: 0;
+}
+
+@media screen and (max-width: 400px) {
+	#news .container {
+		width: 100%;
+		margin: 20px 0;
+	}
 }
 
 /* Project */
