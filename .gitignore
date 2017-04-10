@@ -1,3 +1,5 @@
 shell.sh
 /node_modules
 /output
+/program/public/news_files
+/program/public/news_images
