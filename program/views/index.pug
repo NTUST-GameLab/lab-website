@@ -100,10 +100,9 @@ html
 								p.text !{news.text}
 							div.news-link.unselectable
 								div.download
-									span.en-lang !{information.ui.news_link.en}
-									span.tw-lang !{information.ui.news_link.tw}
-							a(href=news.link, target='_blank')
-								div.news-cover(style="background-image: url('" + news.thumbnail + "');")
+									a(href=news.link, target='_blank')
+										span.en-lang !{information.ui.news_link.en}
+										span.tw-lang !{information.ui.news_link.tw}
 
 			// Projects.
 			section#projects

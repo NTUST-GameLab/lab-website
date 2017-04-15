@@ -352,8 +352,8 @@ nav.menu li.language {
 #news .container {
 	display: inline-block;
 	position: relative;
-	width: 350px;
-	height: 200px;
+	width: 70%;
+	height: 50px;
 	font-family: 'Roboto', 'NotoSans';
 	border: 2px solid rgb(215, 215, 215);
 	border-radius: 5px;
@@ -370,8 +370,9 @@ nav.menu li.language {
 }
 
 #news .container .news-content .title {
-	font-size: 1.25em;
-	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.25em;
+	text-align: left;
 	padding: 10px;
 }
 
@@ -385,17 +386,20 @@ nav.menu li.language {
 #news .container .news-link .download {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
+	right:0;
+	/*width: 30%;*/
 	height: 50px;
 	color: #FFF;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
-	text-align: center;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	text-align: right;
 	text-shadow: 2px 2px 4px #000;
-	line-height: 2.5em;
+	line-height: 2em;
 	font-size: 1.5em;
+	padding-right: 6px;
+	padding-left: 6px;
 }
 
-#news .container .news-cover {
+/*#news .container .news-cover {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -413,11 +417,17 @@ nav.menu li.language {
 
 #news .container .news-cover:hover {
 	opacity: 0;
+}*/
+
+#news a{
+	color: #FFF;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 400px) {
 	#news .container {
 		width: 100%;
+		height: 300%;
 		margin: 20px 0;
 	}
 }
