@@ -51,7 +51,7 @@
 			"since":     "2015-11",
 			"mail":      "firzen10459@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
-			"domains":   ["procedural modeling of chinese buildings"]
+			"domains":   ["Procedural modeling of chinese buildings"]
 		},
 		{
 			"studentId": "M10415052",
@@ -105,7 +105,7 @@
 			"since":     "2016-02",
 			"mail":      "salmon.zh.tw@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000402759103/picture?width=200&height=200",
-			"domains":   ["Full-Stack Development", "Data Mining"],
+			"domains":   ["Procedual Level Generation", "Full-Stack Development"],
 			"socials":   {
 				"website": "http://salmon.tw"
 			}
@@ -227,7 +227,7 @@
 			"since":     "2017-09",
 			"mail":      "ewsngoole@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100010074434444/picture?width=200&height=200",
-			"domains":   ["Image process"]
+			"domains":   ["Image Processing"]
 		},
 		{
 			"studentId": "",
@@ -239,7 +239,7 @@
 			"since":     "2017-09",
 			"mail":      "neibi0406@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000210302054/picture?width=200&height=200",
-			"domains":   ["Computer graphics"]
+			"domains":   ["Computer Graphics"]
 		},
 		{
 			"studentId": "",
