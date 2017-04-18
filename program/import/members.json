@@ -27,7 +27,7 @@
 			"since":     "2016-09",
 			"mail":      "yajinyee0306@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000199454981/picture?width=200&height=200",
-			"domains":   ["Table Tennis"]
+			"domains":   ["Rhythm Game","Web Application Develop","PCG"]
 		},
 		{
 			"studentId": "",
@@ -51,7 +51,7 @@
 			"since":     "2015-11",
 			"mail":      "firzen10459@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
-			"domains":   ["Data Analysis"]
+			"domains":   ["procedural modeling of chinese buildings"]
 		},
 		{
 			"studentId": "M10415052",
@@ -63,7 +63,7 @@
 			"since":     "2015-07",
 			"mail":      "tony123966@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000498912366/picture?width=200&height=200",
-			"domains":   ["Computer Graphics"],
+			"domains":   ["Procedual modeling of chinese building"],
 			"socials":   {
 				"facebook": "https://www.facebook.com/tony123966"
 			}
@@ -78,7 +78,7 @@
 			"since":     "2015-07",
 			"mail":      "ChangHanSongs@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100002239913248/picture?width=200&height=200",
-			"domains":   ["iOS App Development", "Computer Graphics"]
+			"domains":   ["Billiard AI" , "Data Mining"]
 		},
 		{
 			"studentId": "M10415048",
@@ -90,7 +90,7 @@
 			"since":     "2016-09",
 			"mail":      "hero70312@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000400103201/picture?width=200&height=200",
-			"domains":   ["Computer Graphics"],
+			"domains":   ["Billiard AI"],
 			"socials":   {
 				"facebook": "https://www.facebook.com/siting.chou"
 			}
@@ -120,7 +120,7 @@
 			"since":     "2016-02",
 			"mail":      "ardiawanbagusharisa@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200",
-			"domains":   ["Game Development", "Procedural Content Generation", "Platformer Game"],
+			"domains":   ["Procedural Game Level"],
 			"socials":   {
 				"facebook": "http://facebook.com/ardiawanbagus",
 				"twitter" : "https://twitter.com/ardiawanbagush",
@@ -137,7 +137,7 @@
 			"since":     "2016-03",
 			"mail":      "ericmina83@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000446074157/picture?width=200&height=200",
-			"domains":   ["Artificial Intelligence"],
+			"domains":   ["Machine Learning", "Artificial Intelligence"],
 			"socials":   {
 				"facebook": "http://www.facebook.com/ericmina83"
 			}
@@ -152,7 +152,7 @@
 			"since":     "2016-06",
 			"mail":      "nosneb83@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000375378853/picture?width=200&height=200",
-			"domains":   ["Machine Learning"],
+			"domains":   ["Machine Learning", "Artificial Intelligence"],
 			"socials":   {
 				"facebook": "https://www.facebook.com/yunbin.li"
 			}
@@ -179,7 +179,7 @@
 			"since":     "2016-07",
 			"mail":      "ally53628@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200",
-			"domains":   ["Computer Graphics"]
+			"domains":   ["Procedural Content Generation"]
 		},
 		{
 			"studentId": "M10115064",
@@ -191,7 +191,7 @@
 			"since":     "2017-02",
 			"mail":      "sixtsj10616@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000148642757/picture?width=200&height=200",
-			"domains":   ["3D Tree Synthesis"]
+			"domains":   ["Procedural modeling of Chinese Ting"]
 		},
 		{
 			"studentId": "",
@@ -203,7 +203,7 @@
 			"since":     "2017-09",
 			"mail":      "s900127127@gmail.com",
 			"thumbnail": "https://graph.facebook.com/1378568129/picture?width=200&height=200",
-			"domains":   [""]
+			"domains":   ["Game generation", "Game production"]
 		},
 		{
 			"studentId": "",
@@ -215,7 +215,7 @@
 			"since":     "2017-09",
 			"mail":      "jenny84311@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000101865813/picture?width=200&height=200",
-			"domains":   [""]
+			"domains":   ["Game Generate"]
 		},
 		{
 			"studentId": "",
@@ -227,7 +227,7 @@
 			"since":     "2017-09",
 			"mail":      "ewsngoole@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100010074434444/picture?width=200&height=200",
-			"domains":   [""]
+			"domains":   ["Image process"]
 		},
 		{
 			"studentId": "",
@@ -239,7 +239,7 @@
 			"since":     "2017-09",
 			"mail":      "neibi0406@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100000210302054/picture?width=200&height=200",
-			"domains":   [""]
+			"domains":   ["Computer graphics"]
 		},
 		{
 			"studentId": "",
