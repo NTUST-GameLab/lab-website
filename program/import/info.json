@@ -19,6 +19,12 @@
 			"text":      "",
 			"link":      "./public/news_files/GDC2017-TWK.pdf",
 			"thumbnail": ""
+		},
+		{
+			"title":     "VR & AR 技術與產業",
+			"text":      "",
+			"link":      "./public/news_files/ARVRMRLecture.pdf",
+			"thumbnail": ""
 		}
 	],
 	"copyright": "2015 - 2017 © Graphics Animation Multimedia Edutainment Laboratory",
