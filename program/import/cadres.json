@@ -2,44 +2,75 @@
 	{
 		"title": {
 			"en": "GroupA",
-			"tw": "團體 A"
+			"tw": "學術組"
 		},
-		"leader": "D10515006",
-		"subleaders": [
-			"M10115096",
-			"M10415052"
+		"leaders": [
+			{
+				"title": {
+					"en": "titleA",
+					"tw": "組長"
+				},
+				"person": "M10515053"
+			},
+			{
+				"title": {
+					"en": "titleB",
+					"tw": "助教副組長"
+				},
+				"person": "temp002"
+			},
+			{
+				"title": {
+					"en": "titleB",
+					"tw": "口試副組長"
+				},
+				"person": "temp001"
+			}
 		]
 	},
 	{
 		"title": {
 			"en": "GroupB",
-			"tw": "團體 B"
+			"tw": "財務組"
 		},
-		"leader": "M10415076",
-		"subleaders": [
+		"leaders": [
+			{
+				"title": {
+					"en": "titleA",
+					"tw": "組長"
+				},
+				"person": "M10515026"
+			}
 		]
 	},
 	{
 		"title": {
 			"en": "GroupC",
-			"tw": "團體 C"
+			"tw": "系統組"
 		},
-		"leader": "M10415096",
-		"subleaders": [
-			"M10415810",
-			"M10515026"
+		"leaders": [
+			{
+				"title": {
+					"en": "titleA",
+					"tw": "組長"
+				},
+				"person": "M10515066"
+			}
 		]
 	},
 	{
 		"title": {
 			"en": "GroupD",
-			"tw": "團體 D"
+			"tw": "福利組"
 		},
-		"leader": "M10515082",
-		"subleaders": [
-			"M10515066",
-			"M10515053",
-			"M10115064"
+		"leaders": [
+			{
+				"title": {
+					"en": "titleA",
+					"tw": "組長"
+				},
+				"person": "M10515082"
+			}
 		]
 	}
 ]
