@@ -154,7 +154,7 @@ html
 						div.content
 							each cadre, index in cadres
 								div.content-block(class=(index ? "" : "active"))
-									div.leader(style="background-image: url(" + cadre.leaders[0].person.thumbnail + ");")
+									div.leader(style='background-image: url("' + cadre.leaders[0].person.thumbnail + '"), url("./public/images/default-thumbnail.png");')
 										p.name.forceFont #{cadre.leaders[0].person.name}
 										p.cadre-title.forceFont.en-lang #{cadre.leaders[0].title.en}
 										p.cadre-title.forceFont.tw-lang #{cadre.leaders[0].title.tw}
@@ -162,7 +162,7 @@ html
 										div.description
 										div.subleaders
 											each subleader in cadre.leaders.slice(1)
-												div.subleader(style="background-image: url(" + subleader.person.thumbnail + ");")
+												div.subleader(style='background-image: url("' + subleader.person.thumbnail + '"), url("./public/images/default-thumbnail.png");')
 													p.name.forceFont #{subleader.person.name}
 													p.cadre-title.forceFont.en-lang #{subleader.title.en}
 													p.cadre-title.forceFont.tw-lang #{subleader.title.tw}
