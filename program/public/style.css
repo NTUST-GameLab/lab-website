@@ -1112,3 +1112,118 @@ footer .designer {
 	border-radius: 50%;
 	margin-bottom: 0.25em;
 }
+
+/* 2017.06.14 extend, Cadres section */
+
+#cadre-members {
+	width: 750px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+#cadre-members .headers {
+	width: 100%;
+	height: 50px;
+	background: gray;
+}
+
+#cadre-members .headers .header {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	background: #696969;
+	cursor: pointer;
+}
+
+#cadre-members .headers .header:hover {
+	background: #2A4492;
+}
+
+#cadre-members .headers .header.active {
+	background: #2A4492;
+	font-weight: 700;
+}
+
+#cadre-members .headers .header .title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #FFF;
+    font-family: 'Roboto', 'NotoSans', sans-serif;
+    line-height: 50px;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+#cadre-members .content {
+	width: 100%;
+	height: 250px;
+	background-image: url(./images/profile-bg.png);
+}
+
+#cadre-members .content .content-block {
+	display: none;
+}
+
+#cadre-members .content .content-block.active {
+	display: inline;
+}
+
+#cadre-members .content .leader {
+	display: inline-block;
+	width: 250px;
+	height: 100%;
+	position: relative;
+	background: url('./public/images/default-thumbnail.png');
+	background-position: center 35px;
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+}
+
+#cadre-members .content .leader .name {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	line-height: 2.6em;
+	font-size: 1.55em;
+	text-align: center;
+}
+
+#cadre-members .content .right {
+	display: inline-block;
+	width: 500px;
+	height: 100%;
+}
+
+#cadre-members .content .right .description {
+	height: 25%;
+}
+
+#cadre-members .content .right .subleaders {
+	height: 75%;
+	overflow: hidden;
+}
+
+#cadre-members .content .right .subleaders .subleader {
+	float: left;
+	width: 125px;
+	height: 100%;
+	position: relative;
+	background: url('./public/images/default-thumbnail.png');
+	background-position: center 20px;
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+}
+
+#cadre-members .content .right .subleaders .subleader .name {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	line-height: 3.75em;
+	font-size: 1.25em;
+	text-align: center;
+}

@@ -68,6 +68,42 @@ html
 
 		// Content.
 		div.main-content
+			section#temp
+				// Cadres
+				h2.title
+					span.en-lang Cadres
+					span.tw-lang 幹部
+				div#cadre-members
+					div.headers
+						each cadre, index in cadres
+							div.header.unselectable(class=(index ? "" : "active"))
+								p.title
+									span.en-lang #{cadre.title.en}
+									span.tw-lang #{cadre.title.tw}
+					div.content
+						each cadre, index in cadres
+							div.content-block(class=(index ? "" : "active"))
+								div.leader(style="background-image: url(" + cadre.leader.thumbnail + ");")
+									p.name.forceFont
+										| #{cadre.leader.name}
+								div.right
+									div.description
+									div.subleaders
+										each subleader in cadre.subleaders
+											div.subleader(style="background-image: url(" + subleader.thumbnail + ");")
+												p.name.forceFont #{subleader.name}
+				script.
+					var $headers = $('#cadre-members .headers .header');
+					var $blocks = $('#cadre-members .content .content-block');
+					$headers.click(function (event) {
+						var $this = $(this);
+						var index = $this.index();
+						$this.addClass('active');
+						$this.siblings().removeClass('active');
+						$blocks.eq(index).addClass('active');
+						$blocks.eq(index).siblings().removeClass('active');
+					});
+
 			// Photo album.
 			section#photo-album
 				div.photo
@@ -140,37 +176,6 @@ html
 							include ./components/member.pug
 
 				// Cadres
-				h2.title
-					span.en-lang Cadres
-					span.tw-lang 幹部
-				div#cadre-members(style="width: 750px; margin: 0 auto;")
-					div(style="width: 100%; height: 50px; background: gray;")
-						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
-						div(style="display:inline-block; width: 20%; height: 100%; background: blue;")
-						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
-						div(style="display:inline-block; width: 20%; height: 100%; background: blue;")
-						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
-					div(style="width: 100%; height: 250px; background: gray;")
-						div.left(style="display:inline-block; width: 250px; height: 100%; position: relative; background:url(https://graph.facebook.com/100000199454981/picture?width=200&amp;height=200) center 35px no-repeat; background-size: 150px 150px;")
-							p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 2.6em; font-size: 1.55em; text-align: center;")
-								| 同學A名字
-						div.right(style="display:inline-block; width: 500px; height: 100%;")
-							div(style="height: 25%; background: green;")
-							div(style="height: 75%; background: gray;")
-								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
-									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
-										| 同學B名字
-								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
-									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
-										| 同學C名字
-								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
-									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
-										| 同學D名字
-								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
-									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
-										| 同學E名字
-
-
 
 				// Alumni
 				if members.alumni && members.alumni.length

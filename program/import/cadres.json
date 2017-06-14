@@ -1,0 +1,45 @@
+[
+	{
+		"title": {
+			"en": "GroupA",
+			"tw": "團體 A"
+		},
+		"leader": "D10515006",
+		"subleaders": [
+			"M10115096",
+			"M10415052"
+		]
+	},
+	{
+		"title": {
+			"en": "GroupB",
+			"tw": "團體 B"
+		},
+		"leader": "M10415076",
+		"subleaders": [
+		]
+	},
+	{
+		"title": {
+			"en": "GroupC",
+			"tw": "團體 C"
+		},
+		"leader": "M10415096",
+		"subleaders": [
+			"M10415810",
+			"M10515026"
+		]
+	},
+	{
+		"title": {
+			"en": "GroupD",
+			"tw": "團體 D"
+		},
+		"leader": "M10515082",
+		"subleaders": [
+			"M10515066",
+			"M10515053",
+			"M10115064"
+		]
+	}
+]
