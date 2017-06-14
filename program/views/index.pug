@@ -139,6 +139,39 @@ html
 						each member in members.ungraduate
 							include ./components/member.pug
 
+				// Cadres
+				h2.title
+					span.en-lang Cadres
+					span.tw-lang 幹部
+				div#cadre-members(style="width: 750px; margin: 0 auto;")
+					div(style="width: 100%; height: 50px; background: gray;")
+						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
+						div(style="display:inline-block; width: 20%; height: 100%; background: blue;")
+						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
+						div(style="display:inline-block; width: 20%; height: 100%; background: blue;")
+						div(style="display:inline-block; width: 20%; height: 100%; background: red;")
+					div(style="width: 100%; height: 250px; background: gray;")
+						div.left(style="display:inline-block; width: 250px; height: 100%; position: relative; background:url(https://graph.facebook.com/100000199454981/picture?width=200&amp;height=200) center 35px no-repeat; background-size: 150px 150px;")
+							p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 2.6em; font-size: 1.55em; text-align: center;")
+								| 同學A名字
+						div.right(style="display:inline-block; width: 500px; height: 100%;")
+							div(style="height: 25%; background: green;")
+							div(style="height: 75%; background: gray;")
+								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
+									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
+										| 同學B名字
+								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
+									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
+										| 同學C名字
+								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
+									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
+										| 同學D名字
+								div(style="display:inline-block; width: 125px; height: 100%; position: relative; background:url(https://graph.facebook.com/1318508506/picture?width=100&amp;height=100) center 20px no-repeat;")
+									p.name.forceFont(style="width: 100%; position: absolute; bottom: 0; line-height: 3.75em; font-size: 1.25em; text-align: center;")
+										| 同學E名字
+
+
+
 				// Alumni
 				if members.alumni && members.alumni.length
 					h2.title
