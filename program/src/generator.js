@@ -46,12 +46,33 @@ async.waterfall([
 		// Import the customer data.
 		var data = {};
 		data.members     = require(importPath + 'members.json');
+		data.cadres      = require(importPath + 'cadres.json');
 		data.information = require(importPath + 'info.json');
 		// Hide the '@' in email information.
 		data.members.faculty.map(emailExtractor);
 		data.members.graduate.map(emailExtractor);
 		data.members.ungraduate.map(emailExtractor);
 		data.members.alumni.map(emailExtractor);
+
+		// Cadres.
+		var members = [];
+		Object.keys(data.members).forEach(function (category) {
+			members = members.concat(data.members[category]);
+		});
+		data.cadres = data.cadres.map(function (cadre) {
+			// Grab the leader.
+			cadre.leader = members.find(function (member) {
+				return member.studentId === cadre.leader;
+			});
+			// Grab the subleaders.
+			cadre.subleaders = cadre.subleaders.map(function (subleader) {
+				return members.find(function (member) {
+					return member.studentId === subleader;
+				});
+			});
+			return cadre;
+		});
+
 		// Read the path.
 		fs.readdir(coverPath, function (err, files) {
 			data.covers = files
