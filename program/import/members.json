@@ -194,7 +194,7 @@
 			"domains":   ["Procedural modeling of Chinese Ting"]
 		},
 		{
-			"studentId": "",
+			"studentId": "temp001",
 			"name":      "來國彥",
 			"title":     {
 				"en": "Master's degree",
@@ -206,7 +206,7 @@
 			"domains":   ["Game generation", "Game production"]
 		},
 		{
-			"studentId": "",
+			"studentId": "temp002",
 			"name":      "林秝安",
 			"title":     {
 				"en": "Master's degree",

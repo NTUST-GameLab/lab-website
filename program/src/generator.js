@@ -60,15 +60,12 @@ async.waterfall([
 			members = members.concat(data.members[category]);
 		});
 		data.cadres = data.cadres.map(function (cadre) {
-			// Grab the leader.
-			cadre.leader = members.find(function (member) {
-				return member.studentId === cadre.leader;
-			});
-			// Grab the subleaders.
-			cadre.subleaders = cadre.subleaders.map(function (subleader) {
-				return members.find(function (member) {
-					return member.studentId === subleader;
+			// Grab the leaders.
+			cadre.leaders = cadre.leaders.map(function (leader) {
+				leader.person = members.find(function (member) {
+					return member.studentId === leader.person;
 				});
+				return leader;
 			});
 			return cadre;
 		});
