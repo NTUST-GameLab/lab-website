@@ -7,21 +7,21 @@
 		"leaders": [
 			{
 				"title": {
-					"en": "titleA",
+					"en": "Manager",
 					"tw": "組長"
 				},
 				"person": "M10515053"
 			},
 			{
 				"title": {
-					"en": "titleB",
+					"en": "C&CPP TA",
 					"tw": "助教副組長"
 				},
 				"person": "temp002"
 			},
 			{
 				"title": {
-					"en": "titleB",
+					"en": "oral defense assistant",
 					"tw": "口試副組長"
 				},
 				"person": "temp001"
@@ -36,7 +36,7 @@
 		"leaders": [
 			{
 				"title": {
-					"en": "titleA",
+					"en": "Manager",
 					"tw": "組長"
 				},
 				"person": "M10515026"
@@ -51,7 +51,7 @@
 		"leaders": [
 			{
 				"title": {
-					"en": "titleA",
+					"en": "Manager",
 					"tw": "組長"
 				},
 				"person": "M10515066"
@@ -66,7 +66,7 @@
 		"leaders": [
 			{
 				"title": {
-					"en": "titleA",
+					"en": "Manager",
 					"tw": "組長"
 				},
 				"person": "M10515082"
