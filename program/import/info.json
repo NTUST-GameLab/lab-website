@@ -15,15 +15,33 @@
 	},
 	"news": [
 		{
-			"title":     "2017 遊戲開發者會議分享：遊戲中的 人工智慧。",
+			"title":     "2018 台北國際電玩展",
 			"text":      "",
-			"link":      "./public/news_files/GDC2017-TWK.pdf",
+			"link":      "https://gnn.gamer.com.tw/5/146815.html",
+			"thumbnail": ""
+		},
+		{
+			"title":     "2017 東京電玩展 TGS海外研習團相關資訊",
+			"text":      "",
+			"link":      "./public/news_files/TGS.pdf",
+			"thumbnail": ""
+		},	
+		{
+			"title":     "亞洲 遊戲展",
+			"text":      "",
+			"link":      "http://www.g2easia.com/zh-hk/Home/",
 			"thumbnail": ""
 		},
 		{
 			"title":     "VR & AR 技術與產業",
 			"text":      "",
 			"link":      "./public/news_files/ARVRMRLecture.pdf",
+			"thumbnail": ""
+		},
+		{
+			"title":     "2017 遊戲開發者會議分享：遊戲中的 人工智慧。",
+			"text":      "",
+			"link":      "./public/news_files/GDC2017-TWK.pdf",
 			"thumbnail": ""
 		}
 	],
@@ -56,7 +74,7 @@
 		},
 		"sec_about": {
 			"en": "About GAME&nbsp;Lab",
-			"tw": "關於電腦繪圖學實驗室"
+			"tw": "關於電腦遊戲、繪圖學實驗室"
 		},
 		"sec_projects": {
 			"en": "Projects",
