@@ -15,6 +15,12 @@
 	},
 	"news": [
 		{
+			"title":     "[GDC 2017分享會] AI in Games",
+			"text":      "",
+			"link":      "https://www.youtube.com/watch?v=IFuvnYoodT0",
+			"thumbnail": ""
+		},
+		{
 			"title":     "台北遊戲開發者論壇",
 			"text":      "",
 			"link":      "http://www.tgdf.tw/",
