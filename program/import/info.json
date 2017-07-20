@@ -15,6 +15,12 @@
 	},
 	"news": [
 		{
+			"title":     "[TGDF 2017] 遊戲人工智慧與關卡難易度",
+			"text":      "",
+			"link":      "./public/news_files/TGDF-2017.pdf",
+			"thumbnail": ""
+		},
+		{
 			"title":     "[GDC 2017分享會] AI in Games",
 			"text":      "",
 			"link":      "https://www.youtube.com/watch?v=IFuvnYoodT0",

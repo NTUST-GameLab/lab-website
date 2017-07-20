@@ -218,7 +218,7 @@
 			"domains":   ["Game Generate"]
 		},
 		{
-			"studentId": "",
+			"studentId": "temp003",
 			"name":      "劉益銓",
 			"title":     {
 				"en": "Master's degree",
@@ -230,7 +230,7 @@
 			"domains":   ["Image Processing"]
 		},
 		{
-			"studentId": "",
+			"studentId": "temp004",
 			"name":      "林德潔",
 			"title":     {
 				"en": "Master's degree",
@@ -242,7 +242,7 @@
 			"domains":   ["Computer Graphics"]
 		},
 		{
-			"studentId": "",
+			"studentId": "temp005",
 			"name":      "王丞珍",
 			"title":     {
 				"en": "Master's degree",
@@ -264,7 +264,20 @@
 			"mail":      "",
 			"thumbnail": "",
 			"domains":   [""]
+		},
+		{
+			"studentId": "temp006",
+			"name":      "王竣生",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-09",
+			"mail":      "",
+			"thumbnail": "https://graph.facebook.com/100000873163760/picture?width=200&height=200",
+			"domains":   [""]
 		}
+
 	],
 	"ungraduate": [
 

@@ -40,7 +40,15 @@
 					"tw": "組長"
 				},
 				"person": "M10515026"
+			},
+			{
+				"title": {
+					"en": "Vice mananger",
+					"tw": "副組長"
+				},
+				"person": "temp006"
 			}
+
 		]
 	},
 	{
@@ -55,6 +63,20 @@
 					"tw": "組長"
 				},
 				"person": "M10515066"
+			},
+			{
+				"title": {
+					"en": "Vice manager",
+					"tw": "副組長"
+				},
+				"person": "temp003"
+			},
+			{
+				"title": {
+					"en": "Hardware manager",
+					"tw": "設備副組長"
+				},
+				"person": "temp004"
 			}
 		]
 	},
@@ -70,6 +92,13 @@
 					"tw": "組長"
 				},
 				"person": "M10515082"
+			},
+			{
+				"title": {
+					"en": "Vice manager",
+					"tw": "副組長"
+				},
+				"person": "temp005"
 			}
 		]
 	}
