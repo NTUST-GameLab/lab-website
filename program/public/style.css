@@ -510,6 +510,11 @@ nav.menu li.language {
 	padding-left: 6px;
 }
 
+#projects .content .container .projects-link .download a{
+	color: #FFF;
+	text-decoration: none;
+}
+
 /* Faculty */
 
 #faculty .member {
