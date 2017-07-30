@@ -1,7 +1,7 @@
 [
 	{
 		"title": {
-			"en": "GroupA",
+			"en": "學術組",
 			"tw": "學術組"
 		},
 		"leaders": [
@@ -30,7 +30,7 @@
 	},
 	{
 		"title": {
-			"en": "GroupB",
+			"en": "財務組",
 			"tw": "財務組"
 		},
 		"leaders": [
@@ -53,7 +53,7 @@
 	},
 	{
 		"title": {
-			"en": "GroupC",
+			"en": "系統組",
 			"tw": "系統組"
 		},
 		"leaders": [
@@ -82,7 +82,7 @@
 	},
 	{
 		"title": {
-			"en": "GroupD",
+			"en": "福利組",
 			"tw": "福利組"
 		},
 		"leaders": [

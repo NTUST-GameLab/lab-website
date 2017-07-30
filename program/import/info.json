@@ -63,6 +63,32 @@
 			"thumbnail": ""
 		}
 	],
+	"projects": [
+		{
+			"title":     "105-game design課程 第十組",
+			"link":      "https://www.youtube.com/watch?v=_L2OKUXuT_E"
+		},
+		{
+			"title":     "105-game design課程 第九組",
+			"link":      "https://www.youtube.com/watch?v=JkfTH17vCus"
+		},
+		{
+			"title":     "105-game design課程 第七組",
+			"link":      "https://www.youtube.com/watch?v=5QncFKTIlcg"
+		},
+		{
+			"title":     "105-game design課程 第五組",
+			"link":      "https://www.youtube.com/watch?v=NgtUmcRf64E"
+		},
+		{
+			"title":     "105-game design課程 第四組",
+			"link":      "https://www.youtube.com/watch?v=zMyFBKRuNH8"
+		},
+		{
+			"title":     "105-game design課程 第二組",
+			"link":      "https://www.youtube.com/watch?v=UMqBNwY2GDg"
+		}
+	],
 	"copyright": "2015 - 2017 © Graphics Animation Multimedia Edutainment Laboratory",
 	"ui": 
 	{

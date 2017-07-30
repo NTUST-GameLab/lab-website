@@ -457,7 +457,7 @@ nav.menu li.language {
 	line-height: 2.5em;
 	font-family: 'NotoSans', sans-serif;
 	background: #2A4492;
-	margin: 0 auto;
+	margin: 5px auto;
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -465,6 +465,49 @@ nav.menu li.language {
 #projects .content .more-video-button a {
 	color: inherit;
 	text-decoration: none;
+}
+
+#projects .content .container {
+	display: inline-block;
+	position: relative;
+	width: 70%;
+	height: 50px;
+	font-family: 'Roboto', 'NotoSans';
+	border: 2px solid rgb(215, 215, 215);
+	border-radius: 5px;
+	box-shadow: 4px 4px 0 rgba(215, 215, 215, .5);
+	overflow: hidden;
+	margin: 5px 30px;
+}
+
+#projects .content .container .projects-content {
+	width: 100%;
+	height: 100%;
+	background-image: url(./images/profile-bg.png);
+	border-radius: 5px;
+}
+
+#projects .content .container .projects-content .title {
+	font-size: 1.5em;
+	line-height: 1.25em;
+	text-align: left;
+	padding: 10px;
+}
+
+#projects .content .container .projects-link .download {
+	position: absolute;
+	bottom: 0;
+	right:0;
+	/*width: 30%;*/
+	height: 50px;
+	color: #FFF;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	text-align: right;
+	text-shadow: 2px 2px 4px #000;
+	line-height: 2em;
+	font-size: 1.5em;
+	padding-right: 6px;
+	padding-left: 6px;
 }
 
 /* Faculty */

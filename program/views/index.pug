@@ -110,7 +110,18 @@ html
 					span.en-lang #{information.ui.sec_projects.en}
 					span.tw-lang #{information.ui.sec_projects.tw}
 				div.content
-					iframe(width='560' height='315' src='https://www.youtube.com/embed/8oFlB2qmmoM' frameborder='0' allowfullscreen)
+					if information.projects && information.projects.length
+						each project in information.projects
+							div.container
+								div.projects-content.unselectable
+									p.title #{project.title}
+								div.projects-link.unselectable
+									div.download
+										a(href=project.link, target='_blank')
+											span.en-lang !{information.ui.news_link.en}
+											span.tw-lang !{information.ui.news_link.tw}
+				
+					// iframe(width='560' height='315' src='https://www.youtube.com/embed/8oFlB2qmmoM' frameborder='0' allowfullscreen)
 					div.more-video-button.unselectable
 						a(href='https://www.youtube.com/channel/UCIrPge2oPNlvb4yh1ze-jwQ' target='_blank')
 							| More videos on YouTube >	
