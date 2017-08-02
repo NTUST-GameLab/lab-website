@@ -35,7 +35,6 @@ html, body {
 	height: 100%;
 	margin: 0px;
 	background: #FFFFFF;
-	overflow-x: hidden;
 }
 
 body:not(.en-lang-ctrl) .en-lang {
