@@ -18,42 +18,6 @@
 	],
 	"graduate": [
 		{
-			"studentId": "D10515006",
-			"name":      "葉錦頤",
-			"title":     {
-				"en": "Doctoral candidate",
-				"tw": "博士候選人"
-			},
-			"since":     "2016-09",
-			"mail":      "yajinyee0306@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000199454981/picture?width=200&height=200",
-			"domains":   ["Rhythm Game","Web Application Develop","PCG"]
-		},
-		{
-			"studentId": "",
-			"name":      "白正冬",
-			"title":     {
-				"en": "Doctoral candidate",
-				"tw": "博士候選人"
-			},
-			"since":     "2017-02",
-			"mail":      "c5046@ms14.hinet.net",
-			"thumbnail": "https://graph.facebook.com/100000357900623/picture?width=200&height=200",
-			"domains":   [""]
-		},
-		{
-			"studentId": "M10115096",
-			"name":      "鍾宇哲",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2015-11",
-			"mail":      "firzen10459@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
-			"domains":   ["Procedural modeling of chinese buildings"]
-		},
-		{
 			"studentId": "M10415052",
 			"name":      "趙柏勛",
 			"title":     {
@@ -66,48 +30,6 @@
 			"domains":   ["Procedual modeling of chinese building"],
 			"socials":   {
 				"facebook": "https://www.facebook.com/tony123966"
-			}
-		},
-		{
-			"studentId": "M10415076",
-			"name":      "宋承翰",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2015-07",
-			"mail":      "ChangHanSongs@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100002239913248/picture?width=200&height=200",
-			"domains":   ["Billiard AI" , "Data Mining"]
-		},
-		{
-			"studentId": "M10415048",
-			"name":      "周熙庭",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-09",
-			"mail":      "hero70312@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000400103201/picture?width=200&height=200",
-			"domains":   ["Billiard AI"],
-			"socials":   {
-				"facebook": "https://www.facebook.com/siting.chou"
-			}
-		},
-		{
-			"studentId": "M10415096",
-			"name":      "王澤浩",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-02",
-			"mail":      "salmon.zh.tw@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000402759103/picture?width=200&height=200",
-			"domains":   ["Procedual Level Generation", "Full-Stack Development"],
-			"socials":   {
-				"website": "http://salmon.tw"
 			}
 		},
 		{
@@ -283,6 +205,84 @@
 
 	],
 	"alumni": [
+		{
+			"studentId": "D10515006",
+			"name":      "葉錦頤",
+			"title":     {
+				"en": "Doctoral candidate",
+				"tw": "博士候選人"
+			},
+			"since":     "2016-09",
+			"mail":      "yajinyee0306@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000199454981/picture?width=200&height=200",
+			"domains":   ["Rhythm Game","Web Application Develop","PCG"]
+		},
+		{
+			"studentId": "",
+			"name":      "白正冬",
+			"title":     {
+				"en": "Doctoral candidate",
+				"tw": "博士候選人"
+			},
+			"since":     "2017-02",
+			"mail":      "c5046@ms14.hinet.net",
+			"thumbnail": "https://graph.facebook.com/100000357900623/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10115096",
+			"name":      "鍾宇哲",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2015-11",
+			"mail":      "firzen10459@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000094631495/picture?width=200&height=200",
+			"domains":   ["Procedural modeling of chinese buildings"]
+		},
+		{
+			"studentId": "M10415076",
+			"name":      "宋承翰",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2015-07",
+			"mail":      "ChangHanSongs@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002239913248/picture?width=200&height=200",
+			"domains":   ["Billiard AI" , "Data Mining"]
+		},
+		{
+			"studentId": "M10415048",
+			"name":      "周熙庭",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-09",
+			"mail":      "hero70312@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000400103201/picture?width=200&height=200",
+			"domains":   ["Billiard AI"],
+			"socials":   {
+				"facebook": "https://www.facebook.com/siting.chou"
+			}
+		},
+		{
+			"studentId": "M10415096",
+			"name":      "王澤浩",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-02",
+			"mail":      "salmon.zh.tw@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000402759103/picture?width=200&height=200",
+			"domains":   ["Procedual Level Generation", "Full-Stack Development"],
+			"socials":   {
+				"website": "http://salmon.tw"
+			}
+		},
 		{
 			"studentId": "M10315059",
 			"name":      "丁奕豪",
