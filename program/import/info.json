@@ -15,6 +15,18 @@
 	},
 	"news": [
 		{
+			"title":     "遊戲中的人工智慧：見AI是AI，見AI又不是AI－戴文凱專訪",
+			"text":      "",
+			"link":      "http://www.starrocket.io/single-post/20170731",
+			"thumbnail": ""
+		},
+		{
+			"title":     "你玩遊戲還是遊戲玩你？－AI應用如何讓遊戲產業逆轟高揮",
+			"text":      "",
+			"link":      "https://www.accupass.com/event/1707140415051968779380",
+			"thumbnail": ""
+		},
+		{
 			"title":     "[TGDF 2017] 遊戲人工智慧與關卡難易度",
 			"text":      "",
 			"link":      "./public/news_files/TGDF-2017.pdf",
