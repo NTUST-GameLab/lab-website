@@ -116,7 +116,7 @@
 			"domains":   ["Procedural modeling of Chinese Ting"]
 		},
 		{
-			"studentId": "temp001",
+			"studentId": "M10615007",
 			"name":      "來國彥",
 			"title":     {
 				"en": "Master's degree",
@@ -128,7 +128,7 @@
 			"domains":   ["Game generation", "Game production"]
 		},
 		{
-			"studentId": "temp002",
+			"studentId": "M10615008",
 			"name":      "林秝安",
 			"title":     {
 				"en": "Master's degree",
@@ -140,7 +140,7 @@
 			"domains":   ["Game Generate"]
 		},
 		{
-			"studentId": "temp003",
+			"studentId": "M10615006",
 			"name":      "劉益銓",
 			"title":     {
 				"en": "Master's degree",
@@ -152,7 +152,7 @@
 			"domains":   ["Image Processing"]
 		},
 		{
-			"studentId": "temp004",
+			"studentId": "M10615004",
 			"name":      "林德潔",
 			"title":     {
 				"en": "Master's degree",
@@ -164,7 +164,7 @@
 			"domains":   ["Computer Graphics"]
 		},
 		{
-			"studentId": "temp005",
+			"studentId": "M10615015",
 			"name":      "王丞珍",
 			"title":     {
 				"en": "Master's degree",
@@ -176,7 +176,7 @@
 			"domains":   [""]
 		},
 		{
-			"studentId": "",
+			"studentId": "M10615014",
 			"name":      "馮國軒",
 			"title":     {
 				"en": "Master's degree",
@@ -188,7 +188,7 @@
 			"domains":   [""]
 		},
 		{
-			"studentId": "temp006",
+			"studentId": "M10615103",
 			"name":      "王竣生",
 			"title":     {
 				"en": "Master's degree",
@@ -197,6 +197,18 @@
 			"since":     "2017-09",
 			"mail":      "",
 			"thumbnail": "https://graph.facebook.com/100000873163760/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10615105",
+			"name":      "董奎谷",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-09",
+			"mail":      "",
+			"thumbnail": "https://graph.facebook.com/100004388558673/picture?width=200&height=200",
 			"domains":   [""]
 		}
 
