@@ -133,6 +133,9 @@ html
 				div#faculty-members.members
 					each member in members.faculty
 						include ./components/member.pug
+				div.about-professor-button.unselectable
+					a(href='http://faculty.csie.ntust.edu.tw/~wktai/' target='_blank')
+						| More about professor
 
 			// Members.
 			section#members

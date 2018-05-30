@@ -15,6 +15,54 @@
 	},
 	"news": [
 		{
+			"title":     "第十五屆育秀盃 決賽結果公告",
+			"text":      "",
+			"link":      "http://award.ysed.org.tw/news/detail/n/29",
+			"thumbnail": ""
+		},
+		{
+			"title":     "第15屆育秀盃創意獎 道路交通事故處理資訊系統入圍決賽",
+			"text":      "",
+			"link":      "http://award.ysed.org.tw/news/detail/n/28",
+			"thumbnail": ""
+		},
+		{
+			"title":     "智慧城市與物聯網 - 道路交通事故資訊處理系統",
+			"text":      "",
+			"link":      "http://smartcity.org.tw/application_detail.php?id=54",
+			"thumbnail": ""
+		},
+		{
+			"title":     "無人機空拍導入交通事故處理　花蓮創新應用成亮點",
+			"text":      "",
+			"link":      "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000527567_xvl4bas57u8noc6vmoxf1",
+			"thumbnail": ""
+		},
+		{
+			"title":     "花蓮警察局推動無人機事故處理，獲得智慧城市創新應用獎",
+			"text":      "",
+			"link":      "http://www.ksnews.com.tw/index.php/news/realtimenewsContent/0000004084",
+			"thumbnail": ""
+		},
+		{
+			"title":     "無人機處理交通事故 獲智慧城市創新應用獎",
+			"text":      "",
+			"link":      "https://tw.mobi.yahoo.com/news/無人機處理交通事故-獲智慧城市創新應用獎-073541681.html",
+			"thumbnail": ""
+		},
+		{
+			"title":     "花蓮國際智慧城打造聰明便利的科技生活",
+			"text":      "",
+			"link":      "https://money.udn.com/money/story/5635/3041573",
+			"thumbnail": ""
+		},
+		{
+			"title":     "恭賀戴文凱老師榮獲本校106學年度教學優良獎",
+			"text":      "",
+			"link":      "http://www.csie.ntust.edu.tw/files/14-1050-64607,r469-1.php?Lang=zh-tw",
+			"thumbnail": ""
+		},
+		{
 			"title":     "[TGDF 2017 - Day1] 戴文凱 - 遊戲人工智慧與關卡難易度",
 			"text":      "",
 			"link":      "https://www.youtube.com/watch?v=0U73Q4AV_08&list=PLbI-gukyakYd0cUrVbI35cGsW4T2Ael9G&index=12",
@@ -82,6 +130,42 @@
 		}
 	],
 	"projects": [
+		{
+			"title": "Build & fight",
+			"link": "https://www.youtube.com/watch?v=XsATav7K7Is"
+		},
+		{
+			"title": "Cube battle",
+			"link": "https://www.youtube.com/watch?v=VTQ7Q0XmK3s"
+		},
+		{
+			"title": "RabbitFly",
+			"link": "https://www.youtube.com/watch?v=uBUnS7aRIqk"
+		},
+		{
+			"title": "snakes",
+			"link": "https://www.youtube.com/watch?v=PdhTlFW6MXw"
+		},
+		{
+			"title": "The witchcraft",
+			"link": "https://www.youtube.com/watch?v=v3Sd6GDfmBw"
+		},
+		{
+			"title": "unknown knight",
+			"link": "https://www.youtube.com/watch?v=uvLoNEWGics"
+		},
+		{
+			"title": "Wind breaker",
+			"link": "https://www.youtube.com/watch?v=B9IdjlqtZoI"
+		},
+		{
+			"title": "工具人max遊戲影片",
+			"link": "https://www.youtube.com/watch?v=OSFd-T9RaHU"
+		},
+		{
+			"title": "戰戰棋",
+			"link": "https://www.youtube.com/watch?v=E8zN5Zo7YTM"
+		},
 		{
 			"title":     "Dr.Truck",
 			"link":      "https://youtu.be/8bJcPmXOaOg"
