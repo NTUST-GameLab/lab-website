@@ -18,6 +18,18 @@
 	],
 	"graduate": [
 		{
+			"studentId": "D10615813",
+			"name":      "Sugianto",
+			"title":     {
+				"en": "PhD's degree",
+				"tw": "博士生"
+			},
+			"since":     "2018-03",
+			"mail":      "sugianto@itats.ac.id",
+			"thumbnail": "https://graph.facebook.com/100004312717061/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
 			"studentId": "M10415052",
 			"name":      "趙柏勛",
 			"title":     {
@@ -30,23 +42,6 @@
 			"domains":   ["Procedual modeling of chinese building"],
 			"socials":   {
 				"facebook": "https://www.facebook.com/tony123966"
-			}
-		},
-		{
-			"studentId": "M10415810",
-			"name":      "Ardiawan Bagus Harisa",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-02",
-			"mail":      "ardiawanbagusharisa@gmail.com",
-			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200",
-			"domains":   ["Procedural Game Level"],
-			"socials":   {
-				"facebook": "http://facebook.com/ardiawanbagus",
-				"twitter" : "https://twitter.com/ardiawanbagush",
-				"website" : "http://about.me/ardiawanbagusharisa"
 			}
 		},
 		{
@@ -78,42 +73,6 @@
 			"socials":   {
 				"facebook": "https://www.facebook.com/yunbin.li"
 			}
-		},
-		{
-			"studentId": "M10515066",
-			"name":      "林廣柏",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-06",
-			"mail":      "npes89033@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100001000781662/picture?width=200&height=200",
-			"domains":   ["Machine Learning"]
-		},
-		{
-			"studentId": "M10515053",
-			"name":      "陳品陵",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2016-07",
-			"mail":      "ally53628@gmail.com",
-			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200",
-			"domains":   ["Procedural Content Generation"]
-		},
-		{
-			"studentId": "M10115064",
-			"name":      "劉宥銘",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2017-02",
-			"mail":      "sixtsj10616@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000148642757/picture?width=200&height=200",
-			"domains":   ["Procedural modeling of Chinese Ting"]
 		},
 		{
 			"studentId": "M10615007",
@@ -210,8 +169,91 @@
 			"mail":      "",
 			"thumbnail": "https://graph.facebook.com/100004388558673/picture?width=200&height=200",
 			"domains":   [""]
+		},
+		{
+			"studentId": "M10615814",
+			"name":      "Gerry Fernando",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-03",
+			"mail":      "gerryfernando31@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000408856381/picture?width=200&height=200",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10715022",
+			"name":      "林承達",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "c110316023@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100006791419433/picture?width=200&height=200",
+			"domains":   ["Image processing"]
+		},
+		{
+			"studentId": "M10715030",
+			"name":      "陳俊儒",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "yy9517822@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000365592866/picture?width=200&height=200",
+			"domains":   ["Game Generation"]
+		},
+		{
+			"studentId": "M10715003",
+			"name":      "鄭博安",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "andy11223386@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002766445838/picture?width=200&height=200",
+			"domains":   ["Machine Learning "]
+		},
+		{
+			"studentId": "M10715084",
+			"name":      "廖宣瑋",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "ttiimm2334225@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100001645075373/picture?width=200&height=200",
+			"domains":   ["Image Processing"]
+		},
+		{
+			"studentId": "M10715014",
+			"name":      "林岳儒",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "fbi36960207@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002381709343/picture?width=200&height=200",
+			"domains":   ["Artificial Intelligence"]
+		},
+		{
+			"studentId": "M10715057",
+			"name":      "張子樂",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "vul4howe@gmail.com",
+			"thumbnail": "",
+			"domains":   ["Game Engine"]
 		}
-
 	],
 	"ungraduate": [
 
@@ -240,6 +282,44 @@
 			"mail":      "c5046@ms14.hinet.net",
 			"thumbnail": "https://graph.facebook.com/100000357900623/picture?width=200&height=200",
 			"domains":   [""]
+		},
+		{
+			"studentId": "M10315059",
+			"name":      "丁奕豪",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-07",
+			"mail":      "den2092@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000115218367/picture?width=200&height=200",
+			"domains":   ["Embedded Systems", "Image Processing"]
+		},
+		{
+			"studentId": "",
+			"name":      "古廸耀",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2014-06",
+			"mail":      "anedzyl@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200",
+			"domains":   ["Computer Graphics", "PHP, JavaScript"],
+			"socials":   {
+				"website": "https://tw.linkedin.com/in/anedzyl"
+			}
+		},
+		{
+			"studentId": "",
+			"name":      "李建緯",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2015-09",
+			"mail":      "@mail.ntust.edu.tw",
+			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200"
 		},
 		{
 			"studentId": "M10115096",
@@ -296,42 +376,57 @@
 			}
 		},
 		{
-			"studentId": "M10315059",
-			"name":      "丁奕豪",
+			"studentId": "M10115064",
+			"name":      "劉宥銘",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2017-02",
+			"mail":      "sixtsj10616@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000148642757/picture?width=200&height=200",
+			"domains":   ["Procedural modeling of Chinese Ting"]
+		},
+		{
+			"studentId": "M10415810",
+			"name":      "Ardiawan Bagus Harisa",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-02",
+			"mail":      "ardiawanbagusharisa@gmail.com",
+			"thumbnail": "https://graph.facebook.com/1318508506/picture?width=200&height=200",
+			"domains":   ["Procedural Game Level"],
+			"socials":   {
+				"facebook": "http://facebook.com/ardiawanbagus",
+				"twitter" : "https://twitter.com/ardiawanbagush",
+				"website" : "http://about.me/ardiawanbagusharisa"
+			}
+		},
+		{
+			"studentId": "M10515066",
+			"name":      "林廣柏",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2016-06",
+			"mail":      "npes89033@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100001000781662/picture?width=200&height=200",
+			"domains":   ["Machine Learning"]
+		},
+		{
+			"studentId": "M10515053",
+			"name":      "陳品陵",
 			"title":     {
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
 			"since":     "2016-07",
-			"mail":      "den2092@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100000115218367/picture?width=200&height=200",
-			"domains":   ["Embedded Systems", "Image Processing"]
-		},
-		{
-			"studentId": "",
-			"name":      "古廸耀",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2014-06",
-			"mail":      "anedzyl@gmail.com",
-			"thumbnail": "https://graph.facebook.com/100006435828785/picture?width=200&height=200",
-			"domains":   ["Computer Graphics", "PHP, JavaScript"],
-			"socials":   {
-				"website": "https://tw.linkedin.com/in/anedzyl"
-			}
-		},
-		{
-			"studentId": "",
-			"name":      "李建緯",
-			"title":     {
-				"en": "Master's degree",
-				"tw": "碩士生"
-			},
-			"since":     "2015-09",
-			"mail":      "@mail.ntust.edu.tw",
-			"thumbnail": "https://graph.facebook.com/1452171617/picture?width=200&height=200"
+			"mail":      "ally53628@gmail.com",
+			"thumbnail": "https://graph.facebook.com/1780281232/picture?width=200&height=200",
+			"domains":   ["Procedural Content Generation"]
 		}
 	]
 }

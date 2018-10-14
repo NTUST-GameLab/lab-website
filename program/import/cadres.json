@@ -10,21 +10,28 @@
 					"en": "Manager",
 					"tw": "組長"
 				},
-				"person": "M10515053"
+				"person": "M10615007"
+			},
+			{
+				"title": {
+					"en": "Vice mananger",
+					"tw": "副組長"
+				},
+				"person": "M10715014"
 			},
 			{
 				"title": {
 					"en": "C&CPP TA",
 					"tw": "助教副組長"
 				},
-				"person": "M10615008"
+				"person": "M10715084"
 			},
 			{
 				"title": {
 					"en": "oral defense assistant",
 					"tw": "口試副組長"
 				},
-				"person": "M10615007"
+				"person": "M10715003"
 			}
 		]
 	},
@@ -39,14 +46,14 @@
 					"en": "Manager",
 					"tw": "組長"
 				},
-				"person": "M10515026"
+				"person": "M10615103"
 			},
 			{
 				"title": {
 					"en": "Vice mananger",
 					"tw": "副組長"
 				},
-				"person": "M10615103"
+				"person": "M10715030"
 			}
 
 		]
@@ -62,21 +69,14 @@
 					"en": "Manager",
 					"tw": "組長"
 				},
-				"person": "M10515066"
+				"person": "M10615004"
 			},
 			{
 				"title": {
 					"en": "Vice manager",
 					"tw": "副組長"
 				},
-				"person": "M10615006"
-			},
-			{
-				"title": {
-					"en": "Hardware manager",
-					"tw": "設備副組長"
-				},
-				"person": "M10615004"
+				"person": "M10715022"
 			}
 		]
 	},
@@ -91,14 +91,14 @@
 					"en": "Manager",
 					"tw": "組長"
 				},
-				"person": "M10515082"
+				"person": "M10615015"
 			},
 			{
 				"title": {
 					"en": "Vice manager",
 					"tw": "副組長"
 				},
-				"person": "M10615015"
+				"person": "M10715057"
 			}
 		]
 	}
