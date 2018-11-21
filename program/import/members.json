@@ -118,7 +118,7 @@
 				"tw": "碩士生"
 			},
 			"since":     "2017-09",
-			"mail":      "neibi0406@gmail.com",
+			"mail":      "",
 			"thumbnail": "https://graph.facebook.com/100000210302054/picture?width=200&height=200",
 			"domains":   ["Computer Graphics"]
 		},
@@ -243,14 +243,14 @@
 			"domains":   ["Artificial Intelligence"]
 		},
 		{
-			"studentId": "M10715057",
-			"name":      "張子樂",
+			"studentId": "M10715000",
+			"name":      "Aaron",
 			"title":     {
 				"en": "Master's degree",
 				"tw": "碩士生"
 			},
 			"since":     "2018-09",
-			"mail":      "vul4howe@gmail.com",
+			"mail":      "mvalley.cooper@gmail.com",
 			"thumbnail": "",
 			"domains":   ["Game Engine"]
 		}
