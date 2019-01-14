@@ -192,7 +192,7 @@
 			"since":     "2018-09",
 			"mail":      "c110316023@gmail.com",
 			"thumbnail": "https://graph.facebook.com/100006791419433/picture?width=200&height=200",
-			"domains":   ["Image processing"]
+			"domains":   ["Image Processing", "Computer Graphics"]
 		},
 		{
 			"studentId": "M10715030",
@@ -253,6 +253,114 @@
 			"mail":      "mvalley.cooper@gmail.com",
 			"thumbnail": "",
 			"domains":   ["Game Engine"]
+		},
+		{
+			"studentId": "M10715026",
+			"name":      "王聖文",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2018-09",
+			"mail":      "wanglittleyun@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002941929949/picture?width=300&height=300",
+			"domains":   ["Game Generation","Machine Learning"]
+		},
+		{
+			"studentId": "M10815001",
+			"name":      "楊晉復",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-02",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100002035816318/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815002",
+			"name":      "王文楷",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-02",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100011865166104/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815003",
+			"name":      "曾增宇",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-02",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000348295596/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815004",
+			"name":      "沈政一",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-02",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000312921659/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815005",
+			"name":      "黃竹萱",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-09",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100000437115994/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815006",
+			"name":      "王珮如",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-09",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100006705150207/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815007",
+			"name":      "許孟傑",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-09",
+			"mail":      "tofix@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100004200272412/picture?width=300&height=300",
+			"domains":   [""]
+		},
+		{
+			"studentId": "M10815008",
+			"name":      "劉維軒",
+			"title":     {
+				"en": "Master's degree",
+				"tw": "碩士生"
+			},
+			"since":     "2019-09",
+			"mail":      "@gmail.com",
+			"thumbnail": "https://graph.facebook.com/100003172773090/picture?width=300&height=300",
+			"domains":   [""]
 		}
 	],
 	"ungraduate": [

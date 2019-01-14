@@ -14,7 +14,7 @@
 			},
 			{
 				"title": {
-					"en": "Vice mananger",
+					"en": "Vice manager",
 					"tw": "副組長"
 				},
 				"person": "M10715014"
@@ -50,12 +50,40 @@
 			},
 			{
 				"title": {
-					"en": "Vice mananger",
+					"en": "Vice manager",
 					"tw": "副組長"
 				},
 				"person": "M10715030"
 			}
-
+		]
+	},
+	{
+		"title": {
+			"en": "總務組",
+			"tw": "總務組"
+		},
+		"leaders": [
+			{
+				"title": {
+					"en": "Manager",
+					"tw": "組長"
+				},
+				"person": "M10715026"
+			},
+			{
+				"title": {
+					"en": "Member",
+					"tw": "組員"
+				},
+				"person": "M10815006"
+			},
+			{
+				"title": {
+					"en": "Member",
+					"tw": "組員"
+				},
+				"person": "M10815007"
+			}
 		]
 	},
 	{

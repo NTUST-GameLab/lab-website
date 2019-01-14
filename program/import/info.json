@@ -14,6 +14,12 @@
 		"telephone":  "886-2-2733-3141 #6809"
 	},
 	"news": [
+                {
+                        "title":"資工系107學年度實務專題展暨年度最佳專題競賽獲獎名單",
+                        "text": "",
+			"link": "https://imgur.com/gallery/7Xg0p8e",
+			"thumbnail":""
+                },
 		{
 			"title":     "[TGDF 2018 - Day1] 戴文凱 - 麻將AI",
 			"text":      "",
@@ -137,6 +143,46 @@
 	],
 	"projects": [
 		{
+			"title":"107-game design課程 第一組 Boooom",
+			"link":"https://youtu.be/A19ksqhWqYk"
+		},
+	 	{
+                        "title":"107-game design課程 第二組 Swaportal",
+                        "link":"https://youtu.be/G-v0jfOSY_o"
+                },
+		{
+                        "title":"107-game design課程 第三組 Land On Paws",
+                        "link":"https://youtu.be/EosKt8fDIoM"
+                },
+		{
+                        "title":"107-game design課程 第四組 Pseudo Shuttle",
+                        "link":"https://youtu.be/ZFGdu1ezcEs"
+                },
+		{
+                        "title":"107-game design課程 第五組 A Typing Game",
+                        "link":"https://youtu.be/RuJWo0jULVQ"
+                },
+		{
+                        "title":"107-game design課程 第六組 Chronus",
+                        "link":"https://youtu.be/ngTPHjuOMgs"
+                },
+		{
+                        "title":"107-game design課程 第七組 虛像",
+                        "link":"https://youtu.be/jyG0WI-OnII"
+                },
+		{
+                        "title":"107-game design課程 第八組 BallDeathMatch",
+                        "link":"https://youtu.be/W_Uvs0i5CMU"
+                },
+		{
+                        "title":"107-game design課程 第九組 Striker",
+                        "link":"https://youtu.be/Ns_A_XRFbXQ"
+                },
+		{
+                        "title":"107-game design課程 第十組 Kevin's Refuge",
+                        "link":"https://youtu.be/_XMU2SGd2K0"
+                },
+		{
 			"title": "Build & fight",
 			"link": "https://www.youtube.com/watch?v=XsATav7K7Is"
 		},
@@ -201,7 +247,7 @@
 			"link":      "https://www.youtube.com/watch?v=UMqBNwY2GDg"
 		}
 	],
-	"copyright": "2015 - 2017 © Graphics Animation Multimedia Edutainment Laboratory",
+	"copyright": "2015 - 2019 © Graphics Animation Multimedia Edutainment Laboratory",
 	"ui": 
 	{
 		"language": {
